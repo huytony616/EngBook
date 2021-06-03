@@ -1,6 +1,11 @@
+// another config
 
+
+
+// another config
 (function($) {
 
+	
 	
 
 	"use strict";

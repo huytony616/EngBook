@@ -3769,7 +3769,7 @@ input[type="button"].btn-block {
   --width-container: 1200px;
 }
  .hero-section{
-   background-image: url('/images/bg-cat.jpg');
+   background-image: url('/images/bg-cat-1.jpg');
   align-items: flex-start;
   display: flex;
   min-height: 100%;
@@ -8537,7 +8537,7 @@ h1, h2, h3, h4, h5,
   background: transparent !important;
   position: absolute;
   top: -8px;
-  left: 0;
+  left: 6%;
   right: 0;
   z-index: 3; }
   @media (max-width: 991.98px) {
@@ -8638,7 +8638,7 @@ h1, h2, h3, h4, h5,
       border: 1px solid #e449ad;
       background: #e449ad !important; }
     .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-      color: #353535; }
+      color: #000000; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item.active > a {
         color: #4986fc; } }
@@ -9621,7 +9621,7 @@ textarea.form-control {
     margin: 0 0 0 auto !important;
     max-width: 1290px; }
   .testimony-section .overlay {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     width: 50%;
@@ -9629,6 +9629,16 @@ textarea.form-control {
     top: 0;
     bottom: 0;
     right: 0; }
+    .testimony-section .overlayleft {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0; }
     @media (max-width: 991.98px) {
       .testimony-section .overlay {
         display: none; } }
@@ -10273,7 +10283,22 @@ textarea.form-control {
 
 /* another config */
 
-
+.containerright{
+  width: 39%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: -60%;
+  text-overflow: ellipsis;
+}
+.containerleft{
+  width:50% ;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  text-overflow: ellipsis;
+}
 
 
 /* another config */

@@ -25,22 +25,34 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>Study</span>Lab</a>
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo-main.png" width="3%" alt="logo">
+				
+			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="course.html" class="nav-link">Course</a></li>
-					<li class="nav-item"><a href="instructor.html" class="nav-link">Instructor</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-					<li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
-				</ul>
-			</div>
-		</div>
+			  <span class="oi oi-menu">Menu</span> 
+		  </button>
+	
+	   <div class="collapse navbar-collapse" id="ftco-nav">
+		   <ul class="navbar-nav ml-auto">
+			 <li class="nav-item"><a href="index.html" class="nav-link">Trang Chủ</a></li>
+			 <li class="nav-item"><a href="about.html" class="nav-link">Giới Thiệu</a></li>
+			 <li class="nav-item"><a href="course.html" class="nav-link">Sản Phẩm</a></li>
+			 <li class="nav-item"><a href="#" class="nav-link">Học Sinh</a></li>
+			 <li class="nav-item"><a href="#" class="nav-link">Giáo Viên</a></li>
+			 <li class="nav-item"><a href="#" class="nav-link">Phụ Huynh</a></li>
+			 <li class="nav-item"><a href="blog.html" class="nav-link">Tin Tức</a></li>
+			 <li class="nav-item active"><a href="contact.html" class="nav-link">Liên Hệ</a></li>
+		 </ul>
+	 </div>
+	 <div class="navbar-brand">
+		<form class="search-container" action="#">
+			<input id="search-box" type="text" class="search-box" name="q" />
+			<label for="search-box"><i class="fa fa-search search-ico-config" aria-hidden="true"></i></span></label>
+			<input type="submit" id="search-submit" />
+		  </form>
+	 </div>
+	</div>
 	</nav>
 	<!-- END nav -->
 	
@@ -49,8 +61,8 @@
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-end justify-content-center">
 				<div class="col-md-9 ftco-animate pb-5 text-center">
-					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Contact us <i class="fa fa-chevron-right"></i></span></p>
-					<h1 class="mb-0 bread">Contact us</h1>
+					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Trang Chủ <i class="fa fa-chevron-right"></i></a></span> <span>Liên Hệ <i class="fa fa-chevron-right"></i></span></p>
+					<h1 class="mb-0 bread">Liên Hệ Chúng Tôi</h1>
 				</div>
 			</div>
 		</div>
@@ -64,36 +76,36 @@
 						<div class="row no-gutters">
 							<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
 								<div class="contact-wrap w-100 p-md-5 p-4">
-									<h3 class="mb-4">Get in touch</h3>
+									<h3 class="mb-4">Thông Tin Liên Hệ</h3>
 									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
-													<label class="label" for="name">Full Name</label>
+													<label class="label" for="name">Họ Tên</label>
 													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
 												</div>
 											</div>
 											<div class="col-md-6"> 
 												<div class="form-group">
-													<label class="label" for="email">Email Address</label>
+													<label class="label" for="email">Email</label>
 													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="label" for="subject">Subject</label>
+													<label class="label" for="subject">Tiêu Đề</label>
 													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="label" for="#">Message</label>
+													<label class="label" for="#">Lời Nhắn</label>
 													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<input type="submit" value="Send Message" class="btn btn-primary">
+													<input type="submit" value="Gửi" class="btn btn-primary">
 													<div class="submitting"></div>
 												</div>
 											</div>
@@ -103,14 +115,21 @@
 							</div>
 							<div class="col-lg-4 col-md-5 d-flex align-items-stretch">
 								<div class="info-wrap bg-primary w-100 p-md-5 p-4">
-									<h3>Let's get in touch</h3>
-									<p class="mb-4">We're open for any suggestion or just to have a chat</p>
+									<h5>Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội</h5>
+									<div class="dbox w-100 d-flex align-items-start">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<i class="fa fa-address-card" aria-hidden="true"></i>
+										</div>
+										<div class="text pl-3">
+											<p><span>Người Đại Điện:</span> Ông Lê Thành Anh − Tổng Giám đốc</p>
+										</div>
+									</div>
 									<div class="dbox w-100 d-flex align-items-start">
 										<div class="icon d-flex align-items-center justify-content-center">
 											<span class="fa fa-map-marker"></span>
 										</div>
 										<div class="text pl-3">
-											<p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+											<p><span>Địa Chỉ:</span> Tòa nhà VP HEID, ngõ 12 Láng Hạ, Thành Công, Ba Đình, Hà Nội</p>
 										</div>
 									</div>
 									<div class="dbox w-100 d-flex align-items-center">
@@ -118,7 +137,7 @@
 											<span class="fa fa-phone"></span>
 										</div>
 										<div class="text pl-3">
-											<p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+											<p><span>Điện Thoại:</span> <a href="tel://+84243512 2222">(024) 3512 2222</a></p>
 										</div>
 									</div>
 									<div class="dbox w-100 d-flex align-items-center">
@@ -126,7 +145,7 @@
 											<span class="fa fa-paper-plane"></span>
 										</div>
 										<div class="text pl-3">
-											<p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+											<p><span>Email:</span> <a href="mailto:info@heid.vn">info@heid.vn</a></p>
 										</div>
 									</div>
 									<div class="dbox w-100 d-flex align-items-center">
@@ -134,7 +153,7 @@
 											<span class="fa fa-globe"></span>
 										</div>
 										<div class="text pl-3">
-											<p><span>Website</span> <a href="#">yoursite.com</a></p>
+											<p><span>Website</span> <a href="#">sachmem.vn</a></p>
 										</div>
 									</div>
 								</div>
@@ -144,76 +163,57 @@
 				</div>
 
 				<div class="col-md-12 mt-5">
-					<div id="map" class="bg-white"></div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.2892414381145!2d105.81451001533205!3d21.02110969341436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab6548d6aaab%3A0x101deafeb41b3016!2zVMOyYSBuaMOgIEhlaWQ!5e0!3m2!1sen!2s!4v1622657625669!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 			</div>
 		</div>
 	</section>
 
 
-	<footer class="ftco-footer ftco-no-pt">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4">
-						<h2 class="ftco-heading-2">About</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-						<h2 class="ftco-heading-2">Help Desk</h2>
-						<ul class="list-unstyled">
-							<li><a href="#" class="py-2 d-block">Customer Care</a></li>
-							<li><a href="#" class="py-2 d-block">Legal Help</a></li>
-							<li><a href="#" class="py-2 d-block">Services</a></li>
-							<li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-							<li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-							<li><a href="#" class="py-2 d-block">Call Us</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4">
-						<h2 class="ftco-heading-2">Recent Courses</h2>
-						<ul class="list-unstyled">
-							<li><a href="#" class="py-2 d-block">Computer Engineering</a></li>
-							<li><a href="#" class="py-2 d-block">Web Design</a></li>
-							<li><a href="#" class="py-2 d-block">Business Studies</a></li>
-							<li><a href="#" class="py-2 d-block">Civil Engineering</a></li>
-							<li><a href="#" class="py-2 d-block">Computer Technician</a></li>
-							<li><a href="#" class="py-2 d-block">Web Developer</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md pt-5">
-					<div class="ftco-footer-widget pt-md-5 mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-								<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-								<li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-					</div>
-				</div>
-			</div>
-		</footer>
+<footer class="ftco-footer ftco-no-pt">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md pt-5">
+        <div class="ftco-footer-widget pt-md-5 mb-4">
+          <h2 class="ftco-heading-2">Nhà xuất bản Giáo dục Việt Nam</h2>
+          <p>Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội</p>
+          <p>Giấy CNĐKDN số: 0102222393 ngày cấp 20/09/2010, nơi cấp: Sở KHĐT TP.Hà Nội</p>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="col-md pt-5">
+    <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+      <h2 class="ftco-heading-2">Trợ Giúp</h2>
+      <ul class="list-unstyled">
+        <li><a href="#" class="py-2 d-block">Diều khoản sử dụng</a></li>
+        <li><a href="#" class="py-2 d-block">Chính sách bảo mật</a></li>
+        <li><a href="#" class="py-2 d-block">Câu hỏi thường gặp</a></li>
+        <li><a href="#" class="py-2 d-block">Hướng dẫn sử dụng</a></li>
+    </ul>
+</div>
+</div>
+<div class="col-md pt-5">
+    <div class="ftco-footer-widget pt-md-5 mb-4">
+       <h2 class="ftco-heading-2">Liên Hệ</h2>
+       <div class="block-23 mb-3">
+         <ul>
+           <li><span class="icon fa fa-map-marker"></span><span class="text">Tòa nhà VP HEID, ngõ 12 Láng Hạ, Thành Công, Ba Đình, Hà Nội</span></li>
+           <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+84 243 512 2222</span></a></li>
+           <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">lienhe@sachmem.vn</span></a></li>
+       </ul>
+   </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-12 text-center">
+    <p>Copyright 2020 Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội. All Rights Reserved</p>
+  </div>
+</div>
+</div>
+</footer>
 		
 		
 
