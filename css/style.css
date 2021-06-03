@@ -3769,7 +3769,7 @@ input[type="button"].btn-block {
   --width-container: 1200px;
 }
  .hero-section{
-   background-image: url('/images/bg-cat-1.jpg');
+   background-image: url('/images/bg-header-about.png');
   align-items: flex-start;
   display: flex;
   min-height: 100%;
@@ -9233,6 +9233,18 @@ textarea.form-control {
     position: absolute;
     top: 0;
     left: 0; }
+    .ftco-about .imgbig {
+      -webkit-box-shadow: 0px 2px 25px -13px rgb(0 0 0 / 26%);
+      -moz-box-shadow: 0px 2px 25px -13px rgba(0, 0, 0, 0.26);
+      box-shadow: 0px 2px 25px -13px rgb(0 0 0 / 26%);
+      border: 15px solid #fff;
+      width: 110%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: contain;
+      background-repeat: no-repeat; }
     @media (max-width: 767.98px) {
       .ftco-about .img {
         height: 400px; } }
@@ -9633,12 +9645,20 @@ textarea.form-control {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
-      width: 50%;
+      width: 30%;
       position: absolute;
-      left: 0;
+      left: 20%;
       top: 0;
-      bottom: 0;
-      right: 0; }
+      bottom: 0; }
+      .testimony-section .overlayright {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 30%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20%; }
     @media (max-width: 991.98px) {
       .testimony-section .overlay {
         display: none; } }
@@ -10284,21 +10304,23 @@ textarea.form-control {
 /* another config */
 
 .containerright{
-  width: 39%;
+  width: 80%;
   position: relative;
   top: 0;
   bottom: 0;
-  right: -60%;
+  right: -55%;
   text-overflow: ellipsis;
 }
 .containerleft{
-  width:50% ;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 10%;
-  text-overflow: ellipsis;
+  width: 80%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    text-overflow: ellipsis;
 }
+
+
 
 
 /* another config */
