@@ -459,7 +459,7 @@ pre {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1600px; } }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
@@ -482,7 +482,7 @@ pre {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px; } }
+    max-width: 1600px; } }
 
 .row {
   display: -webkit-box;
@@ -9247,17 +9247,23 @@ textarea.form-control {
     top: 0;
     left: 0; }
     .ftco-about .imgbig {
-      -webkit-box-shadow: 0px 2px 25px -13px rgb(0 0 0 / 26%);
-      -moz-box-shadow: 0px 2px 25px -13px rgba(0, 0, 0, 0.26);
-      box-shadow: 0px 2px 25px -13px rgb(0 0 0 / 26%);
-      border: 15px solid #fff;
-      width: 110%;
-      height: 100%;
+      width: 700px;
+    height: 350px;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 15%;
+      left: 20%;
       background-size: contain;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+  }
+  .ftco-about .imgbigleft {
+    width: 700px;
+    height: 350px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
       .ftco-about .imgbig-detail {
         -webkit-box-shadow: 0px 2px 25px -13px rgb(0 0 0 / 26%);
     -moz-box-shadow: 0px 2px 25px -13px rgba(0, 0, 0, 0.26);
@@ -9672,22 +9678,23 @@ textarea.form-control {
     right: 0; }
     .testimony-section .overlayleft {
       background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
-      width: 30%;
-      position: absolute;
-      left: 20%;
-      top: 0;
-      bottom: 0; }
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    bottom: 0;
+    height: 90%; }
       .testimony-section .overlayright {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
-        width: 30%;
+        width: 40%;
         position: absolute;
         top: 0;
         bottom: 0;
-        right: 20%; }
+        right: 5%; }
     @media (max-width: 991.98px) {
       .testimony-section .overlay {
         display: none; } }
@@ -10345,12 +10352,12 @@ textarea.form-control {
   display: -webkit-box;
 }
 .containerright{
-  width: 80%;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  right: -55%;
-  text-overflow: ellipsis;
+  width: 55%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: -45%;
+    text-overflow: ellipsis;
 }
 
 .containerright-sider{
@@ -10360,7 +10367,7 @@ textarea.form-control {
     text-overflow: ellipsis;
 }
 .containerleft{
-  width: 80%;
+  width: 95%;
     position: relative;
     top: 0;
     bottom: 0;
@@ -10400,6 +10407,7 @@ textarea.form-control {
   border-radius: 5px;
   overflow: hidden;
   z-index: 0;
+  width: 100%;
 }
 .blog-card a {
   color: inherit;
@@ -10535,7 +10543,7 @@ textarea.form-control {
 @media (min-width: 640px) {
   .blog-card {
     flex-direction: row;
-    max-width: 700px;
+    max-width: 100%;
  }
   .blog-card .meta {
     flex-basis: 40%;
