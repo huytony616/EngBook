@@ -3769,7 +3769,6 @@ input[type="button"].btn-block {
   --width-container: 1200px;
 }
  .hero-section{
-   background-image: url('/images/bg-header-about.png');
   align-items: flex-start;
   display: flex;
   min-height: 100%;
@@ -3780,8 +3779,7 @@ input[type="button"].btn-block {
 .card-grid{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
+  grid-column-gap: 5%;
   max-width: var(--width-container);
   width: 100%;
 }
@@ -8741,7 +8739,7 @@ h1, h2, h3, h4, h5,
   background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
   background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
   background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-  background: linear-gradient(135deg, #2C5B99 0%, #1A99D5 100%);
+  background: linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 ); }
 
 .hero-wrap {
@@ -8769,7 +8767,7 @@ h1, h2, h3, h4, h5,
     background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
     background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
     background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-    background: linear-gradient(135deg, #2C5B99 0%, #1A99D5 100%);
+    background: linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#f048bb', GradientType=1 ); }
   .hero-wrap.hero-wrap-2 {
     height: 600px;
@@ -8795,7 +8793,7 @@ h1, h2, h3, h4, h5,
     background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
     background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
     background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-    background: linear-gradient(135deg, #2C5B99 0%, #1A99D5 100%);
+    background: linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 ); }
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 600px; }
@@ -9536,7 +9534,7 @@ textarea.form-control {
   background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
   background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
   background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-  background: linear-gradient(135deg, #2C5B99 0%, #1A99D5 100%);
+  background: linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 ); }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -9845,7 +9843,7 @@ textarea.form-control {
     background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
     background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
     background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-    background: linear-gradient(135deg, #a7a7a7 0%, #207ce5 100%);
+    background: linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 ); }
 
 @media (max-width: 1199.98px) {
@@ -9987,7 +9985,7 @@ textarea.form-control {
       background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
       background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
       background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
-      background: linear-gradient(135deg, #2C5B99 0%, #1A99D5 100%);
+      background: linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 );
       color: #fff;
       border: 1px solid transparent; }
