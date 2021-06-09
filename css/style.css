@@ -10659,12 +10659,12 @@ section.ftco-section.services-section::before {
     background: white;
     z-index: 3;
     position: absolute;
-    opacity: 0.98;
+    opacity: 0.95;
     top: 0px;
 }
 
 section.ftco-section.services-section {
-    background-image: url(https://s26162.pcdn.co/wp-content/uploads/2019/04/aup.jpg);    
+    background-image: url('../images/bg-image-fixed.png');    
     background-attachment: fixed;
 }
 
