@@ -5,7 +5,7 @@
     <title>EngBook by Wheee</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -15,13 +15,51 @@
     <link rel="stylesheet" href="css/jquery.timepicker.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-b-0">
+                    <label for="exampleInputEmail1">Tìm kiếm</label>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>   
+                <div class="modal-body">
+                    <form class="w-100">
+                        <div class="row">
+                            <div class="col-9 p-r-0">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Tìm ...">
+        
+                                </div>   
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-primary float-right">Tìm kiếm</button>
+
+                            </div>
+                        </div>
+                                            
+                    </form>
+                </div>             
+            </div>
+        </div>
+    </div>
+
+
+
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
+        <div class="container container-nav">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo-main.png" width="3%" alt="logo">
+                <img src="images/logo.jpg" width="30%" alt="logo">
 
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -31,9 +69,29 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Trang Chủ</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">Giới Thiệu</a></li>
-                    <li class="nav-item"><a href="course.html" class="nav-link">Sản Phẩm</a></li>
+                    <li class="nav-item bar-active active"><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                    <li class="nav-item "><a href="about.html" class="nav-link">Giới Thiệu</a></li>
+
+                    <li class="nav-item dropdown-hover">
+                        <a href="course.html" class="nav-link">Sản Phẩm
+                        </a>
+                        <div class="drop-box text-left">
+                            <div class="drop-item">
+                                <a href="">MẦM NON</a>
+                            </div>
+                            <div class="drop-item">
+                                <a href="">TIỂU HỌC</a>
+                            </div>
+                            <div class="drop-item">
+                                <a href="">THCS</a>
+                            </div>
+                            <div class="drop-item">
+                                <a href="">THPT</a>
+                            </div>
+
+                        </div>
+                    </li>
+
                     <li class="nav-item "><a href="student.html" class="nav-link">Học Sinh</a></li>
                     <li class="nav-item"><a href="teacher.html" class="nav-link">Giáo Viên</a></li>
                     <li class="nav-item"><a href="parent.html" class="nav-link">Phụ Huynh</a></li>
@@ -41,14 +99,31 @@
                     <li class="nav-item "><a href="contact.html" class="nav-link p-r-0">Liên Hệ</a></li>
                 </ul>
             </div>
-            <div class="navbar-brand m-0 p-0">
-                <form class="search-container d-flex flex-row-reverse" action="#">                   
-                    <!-- <input type="submit" id="search-submit" />    -->             
-                    <input id="search-box" type="text" placeholder="Tìm kiếm" class="search-box" name="q" />
-                    <label for="search-box" class="label-search-header">
-                        <i class="fa fa-search search-ico-config" aria-hidden="true"></i>
-                    </label>                   
-                </form>
+            <div class="navbar-brand m-0 p-0 search-on-nav">
+                <!-- <form class="search-container" action="#">
+                    <input id="search-box" type="text" placeholder="Tìm Kiếm" class="search-box" name="q" />
+                      <label for="search-box"><i class="fa fa-search search-ico-config" aria-hidden="true"></i></span></label>
+                      <input type="submit" id="search-submit" />
+                </form> -->
+                <div class="icon-search" data-toggle="modal" data-target="#search-modal">
+                    <i class="fa fa-search icon-search-i" aria-hidden="true"></i>
+                </div>
+                <!-- <div class="form-search">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-8 px-2">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Tìm kiếm">
+                                </div>
+                            </div>
+                            <div class="col-4 p-0">
+                                <button class="btn btn-primary" type="submit">Tìm</button>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div> -->
             </div>
         </div>
     </nav>
@@ -86,277 +161,344 @@
     </div>
     </div>
 
-    <section id="about" class="about mt-3">
+    <section id="about" class="about my-5">
         <div class="container">
-
-            <div class="row content">
-                <div class="col-lg-6 aos-init aos-animate text-center mr-0-auto mt-3 mb-5" data-aos="fade-right" data-aos-delay="100">
-                    <h2 class="about-title"> <span class="color-main"> engbook.com </span> <br> Website thương mại điện tử </h2>
-                    <h6>Nhà xuất bản Giáo dục Việt Nam có nhiệm vụ tổ chức biên soạn, biên tập, in, phát hành sách giáo khoa và các sản phẩm giáo dục phục vụ nghiên cứu, giảng dạy, học tập của các ngành học, bậc học.</h6>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <div class="product-first w-100 text-center">
-        <!-- <div class="row justify-content-center pb-4">
-            <div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
-                <span class="subheading">SÁCH</span>
-                <h2 class="mb-4">ĐẦU SÁCH MỚI</h2>
-            </div>
-        </div> -->
-        <section class="hero-section p-0">
-
-            <div class="card-grid">
-                <a class="card" href="#">
-                    <div class="card__background" style="background-image: url('images/user-cat.jpg')"></div>
-                    <div class="card__content">
-                        <h3 class="card__heading">Mầm Non</h3>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__background" style="background-image: url('images/user-cat-1.jpg')"></div>
-                    <div class="card__content">
-                        <h3 class="card__heading">Tiểu Học</h3>
-                    </div>
-                </a>
-                <a class="card" href="#">
-                    <div class="card__background" style="background-image: url('images/user-cat-2.jpg')"></div>
-                    <div class="card__content">
-                        <h3 class="card__heading">THCS</h3>
-                    </div>
-                    </li>
-                    <a class="card" href="#">
-                        <div class="card__background" style="background-image: url('images/user-cat-3.jpg')"></div>
-                        <div class="card__content">
-                            <h3 class="card__heading">THPT</h3>
+            <div class="row text-center">
+                <div class="col-4 text-center">
+                    <div class="card mr-0-auto w-100">
+                        <div class="icon-top">
+                            <i class="fa fa-book  icon-top-i-first" aria-hidden="true"></i>
                         </div>
-                    </a>
-                    <div>
-        </section>
-    </div>
-
-
-
-
-
-
-    <section class="ftco-section services-section">
-        <div class="container position-relative z-10">
-            <div class="row d-flex">
-                <div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
-                    <div class="w-100 mb-4 mb-md-0">
-                        <span class="subheading">Sách Mềm</span>
-                        <h2 class="mb-4">Hệ thống phần mềm và học liệu điện tử hỗ trợ giảng dạy, học tập</h2>
-                        <p>Được chuyển thể từ sách giấy và bổ sung thêm nội dung đa phương tiện, trò chơi, ứng dụng học
-                            tâp, nội dung mở rộng.Ngân hàng câu hỏi và công cụ tạo đề kiểm tra, đánh giá thường xuyên và
-                            định kỳ.</p>
-                        <p>Nội dung sách được mở rộng với tư liệu, câu hỏi bổ sung, giải thích hướng dẫn và thảo
-                            luận.Nội dung do cộng đồng đóng góp, đã qua kiểm duyệt để đảm bảo chất lượng.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-                            <div class="services">
-                                <div class="icon d-flex align-items-center justify-content-center"><span><i
-                                            class="fa fa-graduation-cap" aria-hidden="true"></i></span></div>
-                                <div class="media-body">
-                                    <h3 class="heading mb-3"><a href="">Học Sinh</a></h3>
-                                    <p>Đánh giá được năng lực và kiến thức của mình.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-                            <div class="services">
-                                <div class="icon icon-2 d-flex align-items-center justify-content-center"><span><i
-                                            class="fa fa-female" aria-hidden="true"></i></span></div>
-                                <div class="media-body">
-                                    <h3 class="heading mb-3"><a href="">Giáo Viên</a></h3>
-                                    <p>Có công cụ quản lí lớp học ảo, giảng bài sinh động, hấp dẫn.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-                            <div class="services">
-                                <div class="icon icon-4 d-flex align-items-center justify-content-center"><span><i
-                                            class="fa fa-users" aria-hidden="true"></i></span></div>
-                                <div class="media-body">
-                                    <h3 class="heading mb-3"><a href="">Phụ Huynh</a></h3>
-                                    <p>Cùng thầy cô giúp con tiến bộ trong học tập.</p>
-                                </div>
-                            </div>
+                        <div class="card-body p-1p4rem">
+                            <h5 class="card-title icon-top-i-first text-uppercase title-3">NỘI DUNG ĐA DẠNG <br> CHUẨN XÁC</h5>
+                            <p class="card-text">Đội ngũ tác giả uy tín của Việt Nam hợp tác với các nhà xuất bản tổ
+                                chức giáo dục quốc tế.</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-4 text-center">
+                    <div class="card mr-0-auto w-100">
+                        <div class="icon-top">
+                            <i class="fa fa-graduation-cap icon-top-i-seccond" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body p-1p4rem ">
+                            <h5 class="card-title icon-top-i-seccond text-uppercase title-3">Hỗ trợ tối đa <br> việc dạy và
+                                học</h5>
+                            <p class="card-text">Hỗ trợ toàn diện và hữu ích, bao gồm các khóa tập huấn offline và
+                                online, hệ thống học liệu điện tử và phần mềm hỗ trợ giảng dậy, các kênh tham khảo và
+                                tương tác đa dạng.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="card mr-0-auto w-100">
+                        <div class="icon-top">
+                            <i class="fa fa-leanpub icon-top-i-thirt" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body p-1p4rem">
+                            <h5 class="card-title icon-top-i-thirt text-uppercase title-3">HỆ SINH THÁI ĐA DẠNG PHONG
+                                PHÚ</h5>
+                            <p class="card-text">Sách giáo khoa, sách tham khảo bổ trợ. Kho tài nguyên học liệu điện tử
+                                thường xuyên được cập nhật; Trung tâm ngoại ngữ GLOBAL SUCCESS.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- <div class="product-first w-100 text-center">
-        <div class="row justify-content-center pb-4">
-            <div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
-                <span class="subheading">SẢN PHẨM</span>
-                <h2 class="mb-4">SẢN PHẨM BÁN CHẠY</h2>
-            </div>
-        </div>
-        <div class="">       
-            <section class="hero-section p-0">
-                <div class="card-grid card-grid-3">
-                    <a class="card card-p-0" href="#">
-                        <img src="images/user-cat-1.jpg" class="img-fluid" alt="">
-                    </a>
-                    <a class="card card-p-0" href="#">
-                        <img src="images/user-cat-1.jpg" class="img-fluid" alt="">
-                    </a>
-                    <a class="card card-p-0" href="#">
-                        <img src="images/user-cat-1.jpg" class="img-fluid" alt="">
-                    </a>
-                    <div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="">       
-            <section class="hero-section p-0">
-                <div class="card-grid card-grid-3">
-                    <a class="card card-p-0" href="#">
-                        <img src="images/user-cat-1.jpg" class="img-fluid" alt="">
-                    </a>
-                    <a class="card card-p-0" href="#">
-                        <img src="images/user-cat-1.jpg" class="img-fluid" alt="">
-                    </a>
-                    <a class="card card-p-0" href="#">
-                        <img src="images/user-cat-1.jpg" class="img-fluid" alt="">
-                    </a>
-                    <div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div> -->
-
-    <section class="ftco-section bg-light">
-        <div class="container">
+    <div class="product-first w-100 text-center mt-5 mb-5">
+        <div class="container mb-5">
             <div class="row justify-content-center pb-4">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <span class="subheading">Tin Tức</span>
-                    <h2 class="mb-4">Tin Mới Nhất</h2>
-                </div>
-            </div>
-            <div class="row d-flex">
-                <div class="col-lg-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('images/image_1.jpg');">
-                        </a>
-                        <div class="text d-block">
-                            <div class="meta">
-                                <p>
-                                    <a href="#"><span class="fa fa-calendar mr-2"></span>28/05/2021</a>
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="#">Sách giáo khoa tiếng Anh 6 theo chương trình giáo dục phổ
-                                    thông 2018</a></h3>
-                            <p>Sách giáo khoa Tiếng Anh 6 nằm trong bộ sách giáo khoa theo Chương trình giáo dục phổ
-                                thông 2018 do GS.TS. Hoàng Văn Vân là Tổng...</p>
-                            <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('images/image_1.jpg');">
-                        </a>
-                        <div class="text d-block">
-                            <div class="meta">
-                                <p>
-                                    <a href="#"><span class="fa fa-calendar mr-2"></span>28/05/2021</a>
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="#">Sách giáo khoa tiếng Anh 6 theo chương trình giáo dục phổ
-                                    thông 2018</a></h3>
-                            <p>Sách giáo khoa Tiếng Anh 6 nằm trong bộ sách giáo khoa theo Chương trình giáo dục phổ
-                                thông 2018 do GS.TS. Hoàng Văn Vân là Tổng...</p>
-                            <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('images/image_1.jpg');">
-                        </a>
-                        <div class="text d-block">
-                            <div class="meta">
-                                <p>
-                                    <a href="#"><span class="fa fa-calendar mr-2"></span>28/05/2021</a>
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="#">Sách giáo khoa tiếng Anh 6 theo chương trình giáo dục phổ
-                                    thông 2018</a></h3>
-                            <p>Sách giáo khoa Tiếng Anh 6 nằm trong bộ sách giáo khoa theo Chương trình giáo dục phổ
-                                thông 2018 do GS.TS. Hoàng Văn Vân là Tổng...</p>
-                            <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="ftco-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center pb-4">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <span class="subheading">Tin Tức</span>
-                    <h2 class="mb-4">Video Mới</h2>
+                <div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                    <h2 class="mb-4 text-uppercase">HỆ THỐNG SÁCH TIẾNG ANH THEO CẤP HỌC</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 ftco-animate">
-                    <div class="project-wrap">
-                        <a href="#" class="img" style="background-image: url(images/S1-AB.png);">
-                            <span class="price">Video</span>
-                        </a>
-                        <div class="text p-4">
-                            <h3><a href="#">Smiles 1 Special Edition</a></h3>
-                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
-                            <ul class="d-flex justify-content-between">
-                                <li class="price">150.000đ</li>
-                            </ul>
+                <div class="col-3 box-categories ">
+                    <div class="card show-button-to-right">
+                        <div class="div-image">
+                            <img src="images/user-cat.jpg" class="card-img-top img-fluid" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="title-categories d-flex align-items-center justify-content-center">
+                                <h2 class="card-title color-white">MẦM NON</h2>
+                            </div>
+                            <a href="#" class="btn btn-primary mr-0-auto mt-auto button-to-right">Xem thêm <i
+                                    class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </a>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="project-wrap">
-                        <a href="#" class="img" style="background-image: url(images/S2-AB.png);">
-                            <span class="price">Video</span>
-                        </a>
-                        <div class="text p-4">
-                            <h3><a href="#">Smiles 1 Special Edition</a></h3>
-                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
-                            <ul class="d-flex justify-content-between">
-                                <li class="price">150.000đ</li>
-                            </ul>
+                <div class="col-3 box-categories ">
+                    <div class="card show-button-to-right">
+                        <div class="div-image">
+                            <img src="images/user-cat-1.jpg" class="card-img-top img-fluid" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="title-categories d-flex align-items-center justify-content-center">
+                                <h2 class="card-title color-white">TIỂU HỌC</h2>
+                            </div>
+
+                            <a href="#" class="btn btn-primary mr-0-auto mt-auto button-to-right">Xem thêm <i
+                                    class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="project-wrap">
-                        <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
-                            <span class="price">Video</span>
-                        </a>
-                        <div class="text p-4">
-                            <h3><a href="#">Smiles 1 Special Edition</a></h3>
-                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
-                            <ul class="d-flex justify-content-between">
-                                <li class="price">150.000đ</li>
-                            </ul>
+                <div class="col-3 box-categories ">
+                    <div class="card show-button-to-right">
+                        <div class="div-image">
+                            <img src="images/user-cat-2.jpg" class="card-img-top img-fluid" alt="...">
                         </div>
+                        <div class="card-body">
+                            <div class="title-categories d-flex align-items-center justify-content-center">
+                                <h2 class="card-title color-white">TRUNG HỌC <br> CƠ SỞ</h2>
+                            </div>
+
+                            <a href="#" class="btn btn-primary mr-0-auto mt-auto button-to-right">Xem thêm <i
+                                    class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 box-categories ">
+                    <div class="card show-button-to-right">
+                        <div class="div-image">
+                            <img src="images/user-cat-3.jpg" class="card-img-top img-fluid" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="title-categories d-flex align-items-center justify-content-center">
+                                <h2 class="card-title color-white">TRUNG HỌC <br> PHỔ THÔNG</h2>
+                            </div>
+
+                            <a href="#" class="btn btn-primary mr-0-auto mt-auto button-to-right">Xem thêm <i
+                                    class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="ftco-section services-section mt-5  pt-6">
+        <div class="container position-relative z-10">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 heading-section pr-md-5 ftco-animate">
+                    <div class="w-100 mb-4 mb-md-0">
+                        <h1 class="color-main text-uppercase sach-mem">Sách Mềm</h1>
+                        <h3 class="mb-4">Hệ thống phần mềm và học liệu điện tử hỗ trợ giảng dạy, học tập</h3>
+                        <p class="color-black">Được chuyển thể từ sách giấy và bổ sung thêm nội dung đa phương tiện, trò
+                            chơi, ứng dụng học
+                            tâp, nội dung mở rộng. Ngân hàng câu hỏi và công cụ tạo đề kiểm tra, đánh giá thường xuyên
+                            và
+                            định kỳ.</p>
+                        <p class="color-black">Nội dung sách được mở rộng với tư liệu, câu hỏi bổ sung, giải thích hướng
+                            dẫn và thảo
+                            luận.Nội dung do cộng đồng đóng góp, đã qua kiểm duyệt để đảm bảo chất lượng.</p>
+                        <div>
+                            <a href="https://www.sachmem.vn/">
+                                <button class="btn btn-secondary py-2 px-3">sachmem.vn</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 text-right">
+                    <img src="images/Logo-SM-(New).png" class="img-fluid" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h2 class="mb-4 text-uppercase">Tin Tức - Sự Kiện</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-8">
+                    <div class="w-100 right-item-video">
+                        <div class="row">
+                            <div class="col-4 p-0 bg-image-fix" style="background: url(images/tin-4.png);">
+                                <!-- <img src="images/tin-4.png" alt="" class="img-fluid"> -->
+                            </div>
+                            <div class="col-8">
+                                <h4 c2ass="m-0 p-0 title-1"> Sách giáo khoa tiếng Anh 6 theo chương trình THPT 2018</h4>
+                                <small class="m-0 p-0">Thứ tư, 28/04/2001 | 18:00</small>
+                                <p class="description-1 mt-2">Sách giáo khoa Tiếng Anh 6 nằm trong bộ sách giáo khoa
+                                    theo Chương trình THPT 2018 do GS.TS. Hoàng Văn Vân là Tổng Chủ biên...</p>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="w-100 right-item-video">
+                        <div class="row">
+                            <div class="col-4 p-0 bg-image-fix" style="background: url(images/video-1.png);">
+                                <!-- <img src="images/video-1.png" alt="" class="img-fluid"> -->
+                            </div>
+                            <div class="col-8">
+                                <h4 c2ass="m-0 p-0 title-1">Sách giáo khoa tiếng Anh 2 theo chương trình THPT 2018</h4>
+                                <small class="m-0 p-0">Thứ tư, 28/04/2001 | 18:00</small>
+                                <p class="description-1 mt-2">Sách Tiếng Anh 2 của NXB Giáo dục Việt Nam theo Chương
+                                    trình GDPT 2018 là sản phẩm kết hợp của các tác giả uy tín của Việt Nam...</p>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="w-100 left-item-video">
+                        <div class="row">
+                            <div class="col-4 p-0">
+                                <img src="images/tin-1.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-8">
+                                <h4 class="m-0 p-0 title-1">Sách giáo khoa tiếng Anh 6 theo chương trình THPT 2018</h4>
+                                <small class="m-0 p-0">Thứ tư, 28/04/2021 | 18:00</small>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="w-100 left-item-video">
+                        <div class="row">
+                            <div class="col-4 p-0">
+                                <img src="images/tin-2.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-8">
+                                <h4 class="m-0 p-0 title-1">Tập huấn giáo viên sử dụng SGK Tiếng Anh 2 và Tiếng Anh 6
+                                    NXBGDVN</h4>
+                                <small class="m-0 p-0">Thứ tư, 28/04/2021 | 18:00</small>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="w-100 left-item-video">
+                        <div class="row">
+                            <div class="col-4 p-0">
+                                <img src="images/tin-3.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-8">
+                                <h4 class="m-0 p-0 title-1">NXBGDVN tiếp tục mở miễn phí kho học liệu điện tử Sách Mềm
+                                </h4>
+                                <small class="m-0 p-0">Thứ tư, 28/04/2021 | 18:00</small>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section bg-light  pt-0">
+        <div class="container">
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h2 class="mb-4">DẠY LINH HOẠT - HỌC CHỦ ĐỘNG</h2>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme slide-video">
+                <div class="item slide-video-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xmpRkauS2ss"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="title color-main">
+                        <h4 class="m-0 p-0 title-2"><a class="color-black"
+                                href="https://www.youtube.com/watch?v=xmpRkauS2ss">Tiết dạy SGK Tiếng Anh 6 Unit 9
+                                Lesson 7 - Looking back & Project</a></h4>
+                    </div>
+                </div>
+                <div class="item slide-video-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GibB1q4kr3M"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="title color-main">
+                        <h4 class="m-0 p-0 title-2"><a class="color-black"
+                                href="https://www.youtube.com/watch?v=GibB1q4kr3M">Tiết dạy minh họa SGK Tiếng Anh 6
+                                Unit 9 Lesson 2 - A closer look 1</a></h4>
+                    </div>
+                </div>
+
+                <div class="item slide-video-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/d2gBvI8PMWU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="title color-main">
+                        <h4 class="m-0 p-0 title-2"><a class="color-black"
+                                href="https://www.youtube.com/watch?v=d2gBvI8PMWU">Tiết dạy minh họa SGK Tiếng Anh 6
+                                Unit 9 Lesson 3 - A closer look 2</a></h4>
+                    </div>
+                </div>
+
+                <div class="item slide-video-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c4uz5_VTrhk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="title color-main">
+                        <h4 class="m-0 p-0 title-2"><a class="color-black"
+                                href="https://www.youtube.com/watch?v=c4uz5_VTrhk">Tiết dạy minh họa SGK Tiếng Anh 2
+                                Unit 10 Lesson 1</a></h4>
+                    </div>
+                </div>
+
+                <div class="item slide-video-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/W0LT5CtmXUw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="title color-main">
+                        <h4 class="m-0 p-0 title-2"><a class="color-black"
+                                href="https://www.youtube.com/watch?v=W0LT5CtmXUw">Tiết dạy minh họa SGK Tiếng Anh 6
+                                Unit 9 Lesson 5 - Skill 1</a></h4>
+                    </div>
+                </div>
+                <div class="item slide-video-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xmpRkauS2ss"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="title color-main">
+                        <h4 class="m-0 p-0 title-2"><a class="color-black"
+                                href="https://www.youtube.com/watch?v=vNg69E1yS4w">Tiết dạy minh họa SGK Tiếng Anh 6
+                                Unit 9 Lesson 4 - Communication</a></h4>
+                    </div>
+                </div>
+                <div class="item slide-video-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/W2nB1uB0JOE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="title color-main">
+                        <h4 class="m-0 p-0 title-2"><a class="color-black"
+                                href="https://www.youtube.com/watch?v=W2nB1uB0JOE">Tiết dạy minh họa SGK Tiếng Anh 2
+                                Unit 10 Lesson 2</a></h4>
+                    </div>
+                </div>
+
+                <div class="item slide-video-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M3AFJcoc26Y"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="title color-main">
+                        <h4 class="m-0 p-0 title-2"><a class="color-black"
+                                href="https://www.youtube.com/watch?v=vNg69E1yS4w">Tiết giảng minh họa SGK Tiếng Anh 1
+                                Unit 3 Lesson 3
+                            </a></h4>
                     </div>
                 </div>
             </div>
@@ -428,17 +570,7 @@
 
                     </div>
                 </div>
-                <div class="col-md pt-5">
-                    <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-                        <h2 class="ftco-heading-2">Trợ Giúp</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Diều khoản sử dụng</a></li>
-                            <li><a href="#" class="py-2 d-block">Chính sách bảo mật</a></li>
-                            <li><a href="#" class="py-2 d-block">Câu hỏi thường gặp</a></li>
-                            <li><a href="#" class="py-2 d-block">Hướng dẫn sử dụng</a></li>
-                        </ul>
-                    </div>
-                </div>
+
                 <div class="col-md pt-5">
                     <div class="ftco-footer-widget pt-md-5 mb-4">
                         <h2 class="ftco-heading-2">Liên Hệ</h2>

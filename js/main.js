@@ -257,3 +257,40 @@
 
 
 })(jQuery);
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin: 10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+// var checkShowFormSearch = false;
+// $('.icon-search-i').click(function (e) { 
+//     e.preventDefault();    
+//     if (checkShowFormSearch == true) {
+//         $('.form-search').css({
+//             'opacity': 0,
+//             'transform': 'translateX(15px)'        
+//         });
+//         checkShowFormSearch = false;
+//     } 
+//     else if (checkShowFormSearch == false) {
+//         $('.form-search').css({
+//             'opacity': 1,
+//             'transform': 'translateX(0px)'        
+//         }); 
+//         checkShowFormSearch = true;
+//     }
+//     console.log(checkShowFormSearch);
+// });
