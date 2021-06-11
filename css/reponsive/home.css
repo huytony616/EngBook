@@ -2,4 +2,8 @@
     .button-to-right {
         margin-top: -40%!important;
     }
+    
+    .about-describe {
+        display: none;
+    }
 }
