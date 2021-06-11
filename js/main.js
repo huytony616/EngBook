@@ -259,6 +259,8 @@
 })(jQuery);
 
 $('.owl-carousel').owlCarousel({
+    navigation: true,
+    navigationText: ["<",">"],
     loop:true,
     margin: 10,
     nav:true,
@@ -275,22 +277,3 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-// var checkShowFormSearch = false;
-// $('.icon-search-i').click(function (e) { 
-//     e.preventDefault();    
-//     if (checkShowFormSearch == true) {
-//         $('.form-search').css({
-//             'opacity': 0,
-//             'transform': 'translateX(15px)'        
-//         });
-//         checkShowFormSearch = false;
-//     } 
-//     else if (checkShowFormSearch == false) {
-//         $('.form-search').css({
-//             'opacity': 1,
-//             'transform': 'translateX(0px)'        
-//         }); 
-//         checkShowFormSearch = true;
-//     }
-//     console.log(checkShowFormSearch);
-// });

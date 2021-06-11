@@ -10885,7 +10885,7 @@ nav#ftco-navbar {
 }
 
 .owl-nav .owl-prev span, .owl-nav .owl-next span {
-    font-size: 62px;
+    font-size: 36px;
 }
 
 .owl-nav .owl-prev {
@@ -10902,7 +10902,8 @@ nav#ftco-navbar {
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
-    background: #4286F5;
+    background: none;
+    color: #4286F5 !important;
 }
 
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
