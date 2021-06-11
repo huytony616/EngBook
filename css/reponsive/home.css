@@ -13,7 +13,10 @@
 }
 
 @media only screen and (max-width: 991px) {
-    .icon-search {
+    .search-box-will-show {
+        display: block;
+    }
+    .search-box-will-hide {
         display: none;
     }
     
@@ -29,6 +32,7 @@
 
     li.nav-item {
         border-radius: 5px;
+        text-align: center;
     }
 
     .ftco-navbar-light.scrolled .nav-link {
@@ -40,7 +44,11 @@
     }    
     
     li.nav-item.bar-active.active a:hover {
-        color: white!important;
+        color: white!important;        
+    }
+
+    .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+        border: none!important;
     }
 
     .navbar-collapse {
@@ -56,5 +64,12 @@
 
     .search-phone-menu {
         display: block;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+        font-size: 0.8em;
     }
 }
