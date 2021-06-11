@@ -65,6 +65,27 @@
     .search-phone-menu {
         display: block;
     }
+
+    .logo-lap {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: inline-block;
+    }
+
+    .ftco-navbar-light .navbar-toggler {
+        width: 10%;
+    }
+
+    a.navbar-brand.logo-mobile.w-80 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .logo-header {
+        width: 45%;
+    }
 }
 
 
