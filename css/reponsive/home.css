@@ -1,0 +1,5 @@
+@media only screen and (max-width: 540px) {
+    .button-to-right {
+        margin-top: -40%!important;
+    }
+}
