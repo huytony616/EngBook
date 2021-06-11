@@ -3963,8 +3963,8 @@ input[type="button"].btn-block {
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
-    padding-right: 0;
-    padding-left: 0; } }
+   
+ } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg {
@@ -8604,8 +8604,8 @@ h1, h2, h3, h4, h5,
         padding-bottom: 20px;
         margin-right: 0; } }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-      font-size: 1vw;      
-      padding: 1.5rem 11px;
+      font-size: 0.8em;      
+      padding: 0.5rem 11px;
       color: #000;
       font-weight: 600;
       opacity: 1 !important; }
@@ -8615,11 +8615,11 @@ h1, h2, h3, h4, h5,
      }
       @media (max-width: 991.98px) {
         .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-          padding-left: 0;
+          /* padding-left: 0;
           padding-right: 0;
-          padding-bottom: 0;
-          padding-top: 0.3rem !important;
-          padding-bottom: 0.3rem !important;
+          padding-bottom: 0; */
+          /* padding-top: 0.6rem !important; */
+          /* padding-bottom: 0.3rem !important; */
           color: #01c0f3; } }
     .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
       border: none;
@@ -8675,7 +8675,7 @@ h1, h2, h3, h4, h5,
         color: #4986fc; } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgb(0 0 0 / 94%) !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
@@ -8700,7 +8700,7 @@ z-index: 999;}
       .ftco-navbar-light.scrolled .nav-item > .nav-link {
         padding-left: 20px !important;
         padding-right: 0 !important;
-        padding-bottom: 0 !important; } }
+        } }
     .ftco-navbar-light.scrolled .nav-item.active > a {
         padding-bottom: 0.4em!important;
         border-bottom: 3px solid;
@@ -8733,7 +8733,7 @@ z-index: 999;}
       color: rgba(0, 0, 0, 0.5) !important;
       border-color: rgba(0, 0, 0, 0.5) !important;
       cursor: pointer;
-      margin-right: 15px !important;
+      /* margin-right: 15px !important; */
       text-transform: uppercase;
       font-size: 16px;
       letter-spacing: .1em; }
@@ -11034,4 +11034,12 @@ nav#ftco-navbar {
 
 .m-3pt {
     margin: 3%;
+}
+
+.logo-header {
+    width: 30%;
+}
+
+.search-phone-menu {
+    display: none;
 }

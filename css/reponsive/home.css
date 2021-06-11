@@ -6,4 +6,55 @@
     .about-describe {
         display: none;
     }
+
+    .logo-header {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .icon-search {
+        display: none;
+    }
+    
+    a.nav-link {
+        border-radius: 5px;
+    }
+    
+    a.nav-link:hover {
+        background: rgba(108, 122, 252, 1);
+        color: white!important;
+        border-radius: 5px;
+    }
+
+    li.nav-item {
+        border-radius: 5px;
+    }
+
+    .ftco-navbar-light.scrolled .nav-link {
+        padding: 0.6em!important;
+    }
+
+    .drop-box.text-left {
+        display: none;
+    }    
+    
+    li.nav-item.bar-active.active a:hover {
+        color: white!important;
+    }
+
+    .navbar-collapse {
+        margin-top: 14px;
+    }
+
+    .ftco-navbar-light.scrolled .nav-item.active > a {
+        padding-bottom: 0.6em!important;
+        border: 0px;
+        background: #4286F5 !important;        
+        color: white!important;
+    }
+
+    .search-phone-menu {
+        display: block;
+    }
 }
