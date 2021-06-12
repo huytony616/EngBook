@@ -1,294 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>EngBook by Wheee</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="css/jquery.timepicker.css">
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/style.css">
+    <title>EngBook by Wheee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style/about.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,700;1,200;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reponsive/home.css">
+
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo-main.png" width="3%" alt="logo">
+    <!-- Modal -->
+    <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-b-0">
+                    <label for="exampleInputEmail1">Tìm kiếm</label>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="w-100">
+                        <div class="row">
+                            <div class="col-9 p-r-0">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Tìm ...">
+
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-primary float-right">Tìm kiếm</button>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand logo-lap" href="index.html">
+                <img src="images/logo.jpg" class="logo-header" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <a class="navbar-brand logo-mobile w-80" href="index.html">
+                <img src="images/logo.jpg" class="logo-header" alt="logo">
+            </a>
+            <div class="navbar-brand m-0 p-0 search-on-nav search-box-will-show w-10">
+                <div class="icon-search" data-toggle="modal" data-target="#search-modal">
+                    <i class="fa fa-search icon-search-i" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item "><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                    <li class="nav-item bar-active active"><a href="about.html" class="nav-link">Giới Thiệu</a></li>
+
+                    <li class="nav-item dropdown-hover">
+                        <a href="course.html" class="nav-link">Sản Phẩm
+                        </a>
+                        <div class="drop-box text-left">
+                            <div class="drop-item">
+                                <a href="">MẦM NON</a>
+                            </div>
+                            <div class="drop-item">
+                                <a href="">TIỂU HỌC</a>
+                            </div>
+                            <div class="drop-item">
+                                <a href="">THCS</a>
+                            </div>
+                            <div class="drop-item">
+                                <a href="">THPT</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item "><a href="student.html" class="nav-link">Học Sinh</a></li>
+                    <li class="nav-item"><a href="teacher.html" class="nav-link">Giáo Viên</a></li>
+                    <li class="nav-item"><a href="parent.html" class="nav-link">Phụ Huynh</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Tin Tức</a></li>
+                    <li class="nav-item "><a href="contact.html" class="nav-link">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="navbar-brand m-0 p-0 search-on-nav search-box-will-hide">
+                <div class="icon-search" data-toggle="modal" data-target="#search-modal">
+                    <i class="fa fa-search icon-search-i" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- END nav -->
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-header-about.jpg'); ">
+
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate pb-5 text-center">
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Trang Chủ <i
+                                    class="fa fa-chevron-right"></i></a></span> <span>Giới Thiệu <i
+                                class="fa fa-chevron-right"></i></span></p>
+                    <h1 class="mb-0 bread">Giới Thiệu</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="mt-4">
+        <div class="container">
+            <!-- <div class="links">
+                <span class="link"><a href="index.html">Home</span></a>
+                <span><i class="fa fa-caret-right caret-icon" aria-hidden="true"></i></span>
+                <span class="link"><a href="about.html">Giới thiệu</span></a> 
+                <hr>                    
+            </div> -->
+            <div class="row">
+                <div class="col-12">                
+                    <div class="video">
+                        <div class="video w-100 mr-0-auto mt-5 text-center">
+                            <iframe width="90%" height="515" src="https://www.youtube.com/embed/6wyC9LMl-T0"
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>                        
+                    </div>
+
+                    <div class="about mt-2">
+                        <b>GIỚI THIỆU NHÀ XUẤT BẢN GIÁO DỤC VIỆT NAM</b>
+                        <p>Nhà xuất bản Giáo dục Việt Nam (trước đây là Nhà xuất bản Giáo dục) trực thuộc Bộ Giáo dục và Đào tạo, được thành lập ngày 01 tháng 6 năm 1957. Nhà xuất bản Giáo dục Việt Nam có nhiệm vụ tổ chức biên soạn, biên tập, in, phát hành sách giáo khoa và các sản phẩm giáo dục phục vụ nghiên cứu, giảng dạy, học tập của các ngành học, bậc học; giúp Bộ Giáo dục và Đào tạo chỉ đạo công tác thiết bị giáo dục và thư viện trường học trên toàn quốc.</p>
+                        <p>Tháng 5 năm 2003, Thủ tướng Chính phủ ra quyết định chuyển Nhà xuất bản Giáo dục sang hoạt động theo mô hình Công ty mẹ - Công ty con. Tháng 7 năm 2010, Bộ Giáo dục và Đào tạo có quyết định chuyển Công ty mẹ - Nhà xuất bản Giáo dục Việt Nam thành Công ty trách nhiệm hữu hạn một thành viên do Nhà nước làm chủ sở hữu, với tên gọi đầy đủ: CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN NHÀ XUẤT BẢN GIÁO DỤC VIỆT NAM. Tên giao dịch quốc tế: Vietnam Education Publishing House Limited Company.</p>
+                        <p>Trên chặng đường 63 năm xây dựng và phát triển, Nhà xuất bản Giáo dục Việt Nam hiện là nhà xuất bản lớn nhất trong cả nước với hệ thống các đơn vị thành viên, mỗi năm xuất bản hàng nghìn tựa sách giáo dục và sản xuất thiết bị, đồ dùng dạy học đa dạng phục vụ nhà trường. Những năm qua, Nhà xuất bản Giáo dục Việt Nam luôn hoàn thành tốt nhiệm vụ chính trị được giao: đảm bảo cung ứng đầy đủ, đồng bộ, kịp thời sách giáo khoa, các sản phẩm giáo dục phục vụ học sinh, giáo viên và đông đảo bạn đọc trong cả nước.</p>
+                        <div class="about-img w-100">
+                            <img src="images/about-cat-1.jpg" class="img-fluid" alt="">
+                            <div class="describe w-100 text-center">
+                                Nhà xuất bản Giáo dục Việt Nam với sứ mệnh 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-collap mt-5">
+                        <div class="about-controls">
+                            <div class="control-item control-active" data-show="1">BỘ SÁCH GIÁO KHOA TIẾNG ANH THEO CHƯƠNG TRÌNH GIÁO DỤC PHỔ THÔNG 2018</div>
+                            <div class="control-item" data-show="2">BỘ SÁCH GIÁO KHOA TIẾNG ANH THEO CHƯƠNG TRÌNH THÍ ĐIỂM</div>
+                            <div class="control-item" data-show="3">BỘ SÁCH TIẾNG ANH FAMILY AND FRIENDS</div>
+                            <div class="control-item" data-show="4">BỘ SÁCH TIẾNG ANH TĂNG CƯỜNG</div>
+                        </div>
+
+                        <div class="about-content">
+
+                            <div class="content-item active" data-content="1">
+                                <div class="content-div">                          
+                                    <h1 class="text-center">BỘ SÁCH GIÁO KHOA TIẾNG ANH THEO CHƯƠNG TRÌNH GIÁO DỤC PHỔ THÔNG 2018</h1>          
+                                    <img src="images/about-2-new.jpg" alt="" class="img-fluid">
+                                    <div class="document mt-4">
+                                        <p>BỘ SÁCH GIÁO KHOA TIẾNG ANH THEO CHƯƠNG TRÌNH GIÁO DỤC PHỔ THÔNG 2018 là bộ sách 12 năm trong đó Tiếng Anh 1 và Tiếng Anh 2 là môn học tự chọn, từ Tiếng Anh 3 đến Tiếng Anh 12 là môn học bắt buộc. Bộ sách tiếng Anh từ Tiếng Anh 3 đến Tiếng Anh 12 được bắt đầu biên soạn từ cuối năm 2010 theo quyết định giao nhiệm vụ của Bộ trưởng Bộ Giáo dục và Đào tạo. Sau hơn 8 năm thực hiện nhiệm vụ, gần 6 năm hợp tác với các tác giả và biên tập viên của hai nhà xuất bản đối tác nước ngoài: Macmillan Education và Pearson Education, Ban biên soạn bộ sách giáo khoa tiếng Anh đã biên soạn xong 54 cuốn sách bao gồm Sách học sinh, Sách giáo viên, Sách bài tập và Sách Mềm (hệ thống phần mềm và học liệu điện tử hỗ trợ giảng dạy, học tập).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-item" data-content="2">                                
+                                <div class="content-div">                                    
+                                    <img src="images/about-6.jpg" alt="" class="img-fluid">
+                                    <div class="document mt-2">                                    
+                                        <h1>                                      
+                                            BỘ SÁCH GIÁO KHOA TIẾNG ANH THEO CHƯƠNG TRÌNH THÍ ĐIỂM
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-item" data-content="3">
+                                <div class="content-div">                                    
+                                    <img src="images/about-f&f.jpg" alt="" class="img-fluid">
+                                    <div class="document mt-2">
+                                        <p>
+                                            Family and Friends là chương trình học tiếng Anh bao gồm 3 cấp độ dành cho học sinh tiểu học. Sách sử dụng chương trình giảng dạy ngữ pháp song song luyện tập các kĩ năng và ngữ âm. Với chương trình dạy và học như thế, học sinh có thể phát triển được sự tự tin và khả năng giao tiếp tiếng Anh hiệu quả, cũng như các em có thể hiểu và xử lí thông tin từ nhiều nguồn khác nhau.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-item" data-content="4">
+                                <div class="content-div">                                    
+                                    <img src="images/about-7.jpg" alt="" class="img-fluid">
+                                    <div class="document mt-2">
+                                        <p>                                          
+                                            Bộ sách dành cho giáo viên và học sinh phổ thông, với đầy đủ phần mềm hỗ trợ và tài nguyên phong phú. Liên kết với NXB Express Publishing UK. Đã sử dụng tại hơn 100 quốc gia trên thế giới. Biên tập và phát hành bởi NXB Giáo dục Việt Nam Biên tập tại NXBGDVN : Ban Ngoại ngữ Công ty Dịch vụ xuất bản Gia Định. Đọc kiểm định: Ban Kiểm định NXBGDVN và Ban ngoại ngữ Công ty Dịch vụ Hà Nội đọc rà soát.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu">Menu</span> 
-      </button>
-
-   <div class="collapse navbar-collapse" id="ftco-nav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a href="index.html" class="nav-link">Trang Chủ</a></li>
-      <li class="nav-item active"><a href="about.html" class="nav-link">Giới Thiệu</a></li>
-      <li class="nav-item"><a href="course.html" class="nav-link">Sản Phẩm</a></li>
-      <li class="nav-item "><a href="student.html" class="nav-link">Học Sinh</a></li>
-      <li class="nav-item"><a href="teacher.html" class="nav-link">Giáo Viên</a></li>
-      <li class="nav-item"><a href="parent.html" class="nav-link">Phụ Huynh</a></li>
-      <li class="nav-item"><a href="blog.html" class="nav-link">Tin Tức</a></li>
-      <li class="nav-item "><a href="contact.html" class="nav-link">Liên Hệ</a></li>
-    </ul>
- </div>
- <div class="navbar-brand">
-    <form class="search-container" action="#">
-        <input id="search-box" type="text" placeholder="Tìm Kiếm" class="search-box" name="q" />
-        <label for="search-box"><i class="fa fa-search search-ico-config" aria-hidden="true"></i></span></label>
-        <input type="submit" id="search-submit" />
-      </form>
- </div>
-</div>
-</nav>
- <!-- END nav -->
- 
- <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-header-about.jpg'); ">
-  
-  <div class="container">
-    <div class="row no-gutters slider-text align-items-end justify-content-center">
-      <div class="col-md-9 ftco-animate pb-5 text-center">
-       <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Trang Chủ <i class="fa fa-chevron-right"></i></a></span> <span>Giới Thiệu <i class="fa fa-chevron-right"></i></span></p>
-       <h1 class="mb-0 bread">Giới Thiệu</h1>
-     </div>
-   </div>
- </div>
-</section>
-
-
-
-<section class="ftco-section ftco-about img">
- <div class="container">
-  <div class="row d-flex">
-   <div class="col-md-12 about-intro">
-    <div class="row">
-     <div class="col-md-6 d-flex">
-      <div class="d-flex about-wrap">
-       <div class="img d-flex align-items-center justify-content-center" style="background-image:url(images/about-cat.jpg);">
-       </div>
-       <div class="img-2 d-flex align-items-center justify-content-center" style="background-image:url(images/about-cat-1.jpg);">
-       </div>
-     </div>
-   </div>
-   <div class="col-md-6 pl-md-5 py-5">
-    <div class="row justify-content-start pb-3">
-      <div class="col-md-12 heading-section ftco-animate">
-       <span class="subheading">NHÀ XUẤT BẢN GIÁO DỤC VIỆT NAM</span>
-       <h2 class="mb-4">GIỚI THIỆU NHÀ XUẤT BẢN GIÁO DỤC VIỆT NAM</h2>
-       <p>Nhà xuất bản Giáo dục Việt Nam (trước đây là Nhà xuất bản Giáo dục) 
-         trực thuộc Bộ Giáo dục và Đào tạo, được thành lập ngày 01 tháng 6 năm 1957.
-          Nhà xuất bản Giáo dục Việt Nam có nhiệm vụ tổ chức biên soạn, biên tập, in, 
-          phát hành sách giáo khoa và các sản phẩm giáo dục phục vụ nghiên cứu, giảng
-           dạy, học tập của các ngành học, bậc học; giúp Bộ Giáo dục và Đào tạo chỉ đạo 
-           công tác thiết bị giáo dục và thư viện trường học trên toàn quốc.</p>
-     </div>
-   </div>
- </div>
-</div>
-</div>
-</div>
-<p>Tháng 5 năm 2003, Thủ tướng Chính phủ ra quyết định chuyển Nhà xuất bản Giáo dục sang hoạt động theo mô hình Công ty mẹ – Công ty con. Tháng 7 năm 2010, Bộ Giáo dục và Đào tạo có quyết định chuyển Công ty mẹ – Nhà xuất bản Giáo dục Việt Nam thành Công ty trách nhiệm hữu hạn một thành viên do Nhà nước làm chủ sở hữu, với tên gọi đầy đủ: CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN NHÀ XUẤT BẢN GIÁO DỤC VIỆT NAM. Tên giao dịch quốc tế: Vietnam Education Publishing House Limited Company.</p>
-<p>Trên chặng đường 63 năm xây dựng và phát triển, Nhà xuất bản Giáo dục Việt Nam hiện là nhà xuất bản lớn nhất trong cả nước với hệ thống các đơn vị thành viên, mỗi năm xuất bản hàng nghìn tựa sách giáo dục và sản xuất thiết bị, đồ dùng dạy học đa dạng phục vụ nhà trường. Những năm qua, Nhà xuất bản Giáo dục Việt Nam luôn hoàn thành tốt nhiệm vụ chính trị được giao: đảm bảo cung ứng đầy đủ, đồng bộ, kịp thời sách giáo khoa, các sản phẩm giáo dục phục vụ học sinh, giáo viên và đông đảo bạn đọc trong cả nước.</p>
-<p>Nhà xuất bản Giáo dục Việt Nam có đội ngũ cán bộ, công nhân viên có trình độ chuyên môn cao gồm nhiều giáo sư, phó giáo sư, tiến sĩ, thạc sĩ, cử nhân đủ các chuyên ngành khoa học cơ bản; có đội ngũ biên tập viên chuyên ngành giàu kinh nghiệm, nhiệt tình, tâm huyết với nghề; đội ngũ họa sĩ, kĩ thuật viên chế bản, thiết kế đồ họa giỏi; đội ngũ công nhân kĩ thuật in lành nghề; các chuyên gia thiết bị giáo dục, thư viện trường học, chuyên gia kinh tế, chuyên gia quản lí giỏi.</p>
-<p>Nhà xuất bản Giáo dục Việt Nam thường xuyên, tích cực tham gia công tác xã hội, hoạt động từ thiện: nhận nuôi dưỡng nhiều Bà mẹ Việt Nam anh hùng, ủng hộ sách giáo khoa cho học sinh là con các chiến sĩ đang bảo vệ Trường Sa, tặng sách cho thư viện trường học vùng khó khăn, tặng quà tết cho người nghèo, xây dựng nhà tình nghĩa, ủng hộ đồng bào bị thiên tai, bão lũ,…</p>
-<p>Nhà xuất bản Giáo dục Việt Nam đã vinh dự được Đảng, Nhà nước tặng thưởng Huân chương Hồ Chí Minh cùng nhiều Huân, Huy chương cao quý, Bằng khen, Cờ thi đua của nhiều Bộ, Ngành trao tặng.</p>
-<p>Tiếp tục thực hiện tốt nhiệm vụ được giao, các đơn vị trong hệ thống Nhà xuất bản Giáo dục Việt Nam luôn phấn đấu không ngừng, đổi mới nâng cao chất lượng, phong phú, đa dạng hóa sản phẩm, nâng cao ý thức trách nhiệm, tinh thần tự chủ, tiếp tục củng cố và phát triển hệ thống ngày một vững mạnh, góp phần phục vụ tốt nhất sự nghiệp giáo dục, đào tạo của nước nhà.</p>
-</div>
-</section>
-
-<section class="ftco-section ftco-about img" style="background: #ffca681c;">
-  <div class="container">
-   <div class="row d-flex">
-    <div class="col-md-12 about-intro">
-     <div class="row">
-      <div class="col-md-6 pl-md-5 py-5">
-        <div class="row justify-content-start pb-3">
-          <div class="col-md-12 heading-section ftco-animate">
-           <h2 class="mb-4">BỘ SÁCH GIÁO KHOA TIẾNG ANH
-            THEO CHƯƠNG TRÌNH GIÁO DỤC PHỔ THÔNG 2018</h2>
-           <p>Bộ sách giáo khoa tiếng Anh theo Chương trình Giáo dục phổ thông 2018 là bộ sách 12 năm trong đó Tiếng Anh 1 và Tiếng Anh 2 là môn học tự chọn, từ Tiếng Anh 3 đến Tiếng Anh 12 là môn học bắt buộc. Bộ sách tiếng Anh từ Tiếng Anh 3 đến Tiếng Anh 12 được bắt đầu biên soạn từ cuối năm 2010 theo quyết định giao nhiệm vụ của Bộ trưởng Bộ Giáo dục và Đào tạo.
-
-            Sau hơn 8 năm thực hiện nhiệm vụ, gần 6 năm hợp tác với các tác giả và biên tập viên của hai nhà xuất bản đối tác nước ngoài: Macmillan Education và Pearson Education, Ban biên soạn bộ sách giáo khoa tiếng Anh đã biên soạn xong 54 cuốn sách bao gồm Sách học sinh, Sách giáo viên, Sách bài tập và Sách Mềm (hệ thống phần mềm và học liệu điện tử hỗ trợ giảng dạy, học tập).</p>
-         </div>
-       </div>
-     </div>
-      <div class="col-md-6 d-flex">
-       <div class="d-flex about-wrap">
-        <div class="imgbig d-flex align-items-center justify-content-center" style="background-image:url(images/about-2-new.jpg); box-shadow: 14px 12px #edd5a7;">
+            </div>
         </div>
-      </div>
-    </div>
-    
- </div>
- </div>
- </div>
- </div>
- </section>
+    </main>
+   
 
- <section class="ftco-section ftco-about img" style="background: #ffca681c;">
-  <div class="container">
-   <div class="row d-flex">
-    <div class="col-md-12 about-intro">
-     <div class="row">
-       <div class="col-md-6 d-flex">
-       <div class="d-flex about-wrap">
-        <div class="imgbigleft d-flex align-items-center justify-content-center" style="background-image:url(images/about-6.jpg); box-shadow: 14px 12px #edd5a7;">
+
+
+
+
+
+
+<!-- 
+
+    <section class="ftco-section ftco-about img">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12 about-intro">
+                    <div class="row">
+                        <div class="col-md-6 d-flex">
+                            <div class="d-flex about-wrap">
+                                <div class="img d-flex align-items-center justify-content-center"
+                                    style="background-image:url(images/about-cat.jpg);">
+                                </div>
+                                <div class="img-2 d-flex align-items-center justify-content-center"
+                                    style="background-image:url(images/about-cat-1.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-md-5 py-5">
+                            <div class="row justify-content-start pb-3">
+                                <div class="col-md-12 heading-section ftco-animate">
+                                    <span class="subheading">NHÀ XUẤT BẢN GIÁO DỤC VIỆT NAM</span>
+                                    <h2 class="mb-4">GIỚI THIỆU NHÀ XUẤT BẢN GIÁO DỤC VIỆT NAM</h2>
+                                    <p>Nhà xuất bản Giáo dục Việt Nam (trước đây là Nhà xuất bản Giáo dục)
+                                        trực thuộc Bộ Giáo dục và Đào tạo, được thành lập ngày 01 tháng 6 năm 1957.
+                                        Nhà xuất bản Giáo dục Việt Nam có nhiệm vụ tổ chức biên soạn, biên tập, in,
+                                        phát hành sách giáo khoa và các sản phẩm giáo dục phục vụ nghiên cứu, giảng
+                                        dạy, học tập của các ngành học, bậc học; giúp Bộ Giáo dục và Đào tạo chỉ đạo
+                                        công tác thiết bị giáo dục và thư viện trường học trên toàn quốc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Tháng 5 năm 2003, Thủ tướng Chính phủ ra quyết định chuyển Nhà xuất bản Giáo dục sang hoạt động theo mô
+                hình Công ty mẹ – Công ty con. Tháng 7 năm 2010, Bộ Giáo dục và Đào tạo có quyết định chuyển Công ty mẹ
+                – Nhà xuất bản Giáo dục Việt Nam thành Công ty trách nhiệm hữu hạn một thành viên do Nhà nước làm chủ sở
+                hữu, với tên gọi đầy đủ: CÔNG TY TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN NHÀ XUẤT BẢN GIÁO DỤC VIỆT NAM. Tên
+                giao dịch quốc tế: Vietnam Education Publishing House Limited Company.</p>
+            <p>Trên chặng đường 63 năm xây dựng và phát triển, Nhà xuất bản Giáo dục Việt Nam hiện là nhà xuất bản lớn
+                nhất trong cả nước với hệ thống các đơn vị thành viên, mỗi năm xuất bản hàng nghìn tựa sách giáo dục và
+                sản xuất thiết bị, đồ dùng dạy học đa dạng phục vụ nhà trường. Những năm qua, Nhà xuất bản Giáo dục Việt
+                Nam luôn hoàn thành tốt nhiệm vụ chính trị được giao: đảm bảo cung ứng đầy đủ, đồng bộ, kịp thời sách
+                giáo khoa, các sản phẩm giáo dục phục vụ học sinh, giáo viên và đông đảo bạn đọc trong cả nước.</p>
+            <p>Nhà xuất bản Giáo dục Việt Nam có đội ngũ cán bộ, công nhân viên có trình độ chuyên môn cao gồm nhiều
+                giáo sư, phó giáo sư, tiến sĩ, thạc sĩ, cử nhân đủ các chuyên ngành khoa học cơ bản; có đội ngũ biên tập
+                viên chuyên ngành giàu kinh nghiệm, nhiệt tình, tâm huyết với nghề; đội ngũ họa sĩ, kĩ thuật viên chế
+                bản, thiết kế đồ họa giỏi; đội ngũ công nhân kĩ thuật in lành nghề; các chuyên gia thiết bị giáo dục,
+                thư viện trường học, chuyên gia kinh tế, chuyên gia quản lí giỏi.</p>
+            <p>Nhà xuất bản Giáo dục Việt Nam thường xuyên, tích cực tham gia công tác xã hội, hoạt động từ thiện: nhận
+                nuôi dưỡng nhiều Bà mẹ Việt Nam anh hùng, ủng hộ sách giáo khoa cho học sinh là con các chiến sĩ đang
+                bảo vệ Trường Sa, tặng sách cho thư viện trường học vùng khó khăn, tặng quà tết cho người nghèo, xây
+                dựng nhà tình nghĩa, ủng hộ đồng bào bị thiên tai, bão lũ,…</p>
+            <p>Nhà xuất bản Giáo dục Việt Nam đã vinh dự được Đảng, Nhà nước tặng thưởng Huân chương Hồ Chí Minh cùng
+                nhiều Huân, Huy chương cao quý, Bằng khen, Cờ thi đua của nhiều Bộ, Ngành trao tặng.</p>
+            <p>Tiếp tục thực hiện tốt nhiệm vụ được giao, các đơn vị trong hệ thống Nhà xuất bản Giáo dục Việt Nam luôn
+                phấn đấu không ngừng, đổi mới nâng cao chất lượng, phong phú, đa dạng hóa sản phẩm, nâng cao ý thức
+                trách nhiệm, tinh thần tự chủ, tiếp tục củng cố và phát triển hệ thống ngày một vững mạnh, góp phần phục
+                vụ tốt nhất sự nghiệp giáo dục, đào tạo của nước nhà.</p>
         </div>
-      </div>
-    </div>
-      <div class="col-md-6 pl-md-5 py-5">
-        <div class="row justify-content-start pb-3">
-          <div class="col-md-12 heading-section ftco-animate">
-           <h2 class="mb-4">BỘ SÁCH GIÁO KHOA TIẾNG ANH THEO CHƯƠNG TRÌNH THÍ ĐIỂM</h2>
-         </div>
-       </div>
-     </div>
-      
-    
- </div>
- </div>
- </div>
- </div>
- </section>
+    </section>
 
- <section class="ftco-section ftco-about img" style="background: #ffca681c;">
-  <div class="container">
-   <div class="row d-flex">
-    <div class="col-md-12 about-intro">
-     <div class="row">
-      <div class="col-md-6 pl-md-5 py-5">
-        <div class="row justify-content-start pb-3">
-          <div class="col-md-12 heading-section ftco-animate">
-           <h2 class="mb-4">BỘ SÁCH TIẾNG ANH
-            FAMILY AND FRIENDS</h2>
-           <p>Family and Friends là chương trình học tiếng Anh bao gồm 3 cấp độ dành cho học sinh tiểu học. Sách sử dụng chương trình giảng dạy ngữ pháp song song luyện tập các kĩ năng và ngữ âm. Với chương trình dạy và học như thế, học sinh có thể phát triển được sự tự tin và khả năng giao tiếp tiếng Anh hiệu quả, cũng như các em có thể hiểu và xử lí thông tin từ nhiều nguồn khác nhau.</p>
-         </div>
-       </div>
-     </div>
-      <div class="col-md-6 d-flex">
-       <div class="d-flex about-wrap">
-        <div class="imgbig d-flex align-items-center justify-content-center" style="background-image:url(images/about-f&f.jpg); box-shadow: 14px 12px #edd5a7;">
+    <section class="ftco-section ftco-about img" style="background: #ffca681c;">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12 about-intro">
+                    <div class="row">
+                        <div class="col-md-6 pl-md-5 py-5">
+                            <div class="row justify-content-start pb-3">
+                                <div class="col-md-12 heading-section ftco-animate">
+                                    <h2 class="mb-4">BỘ SÁCH GIÁO KHOA TIẾNG ANH
+                                        THEO CHƯƠNG TRÌNH GIÁO DỤC PHỔ THÔNG 2018</h2>
+                                    <p>Bộ sách giáo khoa tiếng Anh theo Chương trình Giáo dục phổ thông 2018 là bộ sách
+                                        12 năm trong đó Tiếng Anh 1 và Tiếng Anh 2 là môn học tự chọn, từ Tiếng Anh 3
+                                        đến Tiếng Anh 12 là môn học bắt buộc. Bộ sách tiếng Anh từ Tiếng Anh 3 đến Tiếng
+                                        Anh 12 được bắt đầu biên soạn từ cuối năm 2010 theo quyết định giao nhiệm vụ của
+                                        Bộ trưởng Bộ Giáo dục và Đào tạo.
+
+                                        Sau hơn 8 năm thực hiện nhiệm vụ, gần 6 năm hợp tác với các tác giả và biên tập
+                                        viên của hai nhà xuất bản đối tác nước ngoài: Macmillan Education và Pearson
+                                        Education, Ban biên soạn bộ sách giáo khoa tiếng Anh đã biên soạn xong 54 cuốn
+                                        sách bao gồm Sách học sinh, Sách giáo viên, Sách bài tập và Sách Mềm (hệ thống
+                                        phần mềm và học liệu điện tử hỗ trợ giảng dạy, học tập).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="d-flex about-wrap">
+                                <div class="imgbig d-flex align-items-center justify-content-center"
+                                    style="background-image:url(images/about-2-new.jpg); box-shadow: 14px 12px #edd5a7;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    
- </div>
- </div>
- </div>
- </div>
- </section>
+    </section>
 
- <section class="ftco-section ftco-about img" style="background: #ffca681c;">
-  <div class="container">
-   <div class="row d-flex">
-    <div class="col-md-12 about-intro">
-     <div class="row">
-       <div class="col-md-6 d-flex">
-       <div class="d-flex about-wrap">
-        <div class="imgbigleft d-flex align-items-center justify-content-center" style="background-image:url(images/about-7.jpg); box-shadow: 14px 12px #edd5a7;">
+    <section class="ftco-section ftco-about img" style="background: #ffca681c;">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12 about-intro">
+                    <div class="row">
+                        <div class="col-md-6 d-flex">
+                            <div class="d-flex about-wrap">
+                                <div class="imgbigleft d-flex align-items-center justify-content-center"
+                                    style="background-image:url(images/about-6.jpg); box-shadow: 14px 12px #edd5a7;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-md-5 py-5">
+                            <div class="row justify-content-start pb-3">
+                                <div class="col-md-12 heading-section ftco-animate">
+                                    <h2 class="mb-4">BỘ SÁCH GIÁO KHOA TIẾNG ANH THEO CHƯƠNG TRÌNH THÍ ĐIỂM</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-      <div class="col-md-6 pl-md-5 py-5">
-        <div class="row justify-content-start pb-3">
-          <div class="col-md-12 heading-section ftco-animate">
-           <h2 class="mb-4">BỘ SÁCH TIẾNG ANH
-            TĂNG CƯỜNG</h2>
-            <p>Bộ sách dành cho giáo viên và học sinh phổ thông, với đầy đủ phần mềm hỗ trợ và tài nguyên phong phú.
+    </section>
 
-              Liên kết với NXB Express Publishing UK. Đã sử dụng tại hơn 100 quốc gia trên thế giới. Biên tập và phát hành
-              
-              bởi NXB Giáo dục Việt Nam Biên tập tại NXBGDVN : Ban Ngoại ngữ Công ty Dịch vụ xuất bản Gia Định.
-              
-              Đọc kiểm định: Ban Kiểm định NXBGDVN và Ban ngoại ngữ Công ty Dịch vụ Hà Nội đọc rà soát.</p>
-         </div>
-       </div>
-     </div>
-      
-    
- </div>
- </div>
- </div>
- </div>
- </section>
+    <section class="ftco-section ftco-about img" style="background: #ffca681c;">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12 about-intro">
+                    <div class="row">
+                        <div class="col-md-6 pl-md-5 py-5">
+                            <div class="row justify-content-start pb-3">
+                                <div class="col-md-12 heading-section ftco-animate">
+                                    <h2 class="mb-4">BỘ SÁCH TIẾNG ANH
+                                        FAMILY AND FRIENDS</h2>
+                                    <p>Family and Friends là chương trình học tiếng Anh bao gồm 3 cấp độ dành cho học
+                                        sinh tiểu học. Sách sử dụng chương trình giảng dạy ngữ pháp song song luyện tập
+                                        các kĩ năng và ngữ âm. Với chương trình dạy và học như thế, học sinh có thể phát
+                                        triển được sự tự tin và khả năng giao tiếp tiếng Anh hiệu quả, cũng như các em
+                                        có thể hiểu và xử lí thông tin từ nhiều nguồn khác nhau.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="d-flex about-wrap">
+                                <div class="imgbig d-flex align-items-center justify-content-center"
+                                    style="background-image:url(images/about-f&f.jpg); box-shadow: 14px 12px #edd5a7;">
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
- <footer class="ftco-footer ftco-no-pt">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md pt-5">
-        <div class="ftco-footer-widget pt-md-5 mb-4">
-          <h2 class="ftco-heading-2">Nhà xuất bản Giáo dục Việt Nam</h2>
-          <p>Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội</p>
-          <p>Giấy CNĐKDN số: 0102222393 ngày cấp 20/09/2010, nơi cấp: Sở KHĐT TP.Hà Nội</p>
-          
-    </div>
-</div>
-<div class="col-md pt-5">
-    <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-      <h2 class="ftco-heading-2">Trợ Giúp</h2>
-      <ul class="list-unstyled">
-        <li><a href="#" class="py-2 d-block">Diều khoản sử dụng</a></li>
-        <li><a href="#" class="py-2 d-block">Chính sách bảo mật</a></li>
-        <li><a href="#" class="py-2 d-block">Câu hỏi thường gặp</a></li>
-        <li><a href="#" class="py-2 d-block">Hướng dẫn sử dụng</a></li>
-    </ul>
-</div>
-</div>
-<div class="col-md pt-5">
-    <div class="ftco-footer-widget pt-md-5 mb-4">
-       <h2 class="ftco-heading-2">Liên Hệ</h2>
-       <div class="block-23 mb-3">
-         <ul>
-           <li><span class="icon fa fa-map-marker"></span><span class="text">Tòa nhà VP HEID, ngõ 12 Láng Hạ, Thành Công, Ba Đình, Hà Nội</span></li>
-           <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+84 243 512 2222</span></a></li>
-           <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">lienhe@sachmem.vn</span></a></li>
-       </ul>
-       <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-        <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-    </ul>
-    <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-      <li class="ftco-animate"><a href="#"><span class="fa fa-youtube-play"></span></a></li>
-    </ul>
-   </div>
-</div>
-</div>
-</div>
-<div class="row">
-  <div class="col-md-12 text-center">
-    <p>Copyright 2020 Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội. All Rights Reserved</p>
-  </div>
-</div>
-</div>
-</footer>
+    <section class="ftco-section ftco-about img" style="background: #ffca681c;">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12 about-intro">
+                    <div class="row">
+                        <div class="col-md-6 d-flex">
+                            <div class="d-flex about-wrap">
+                                <div class="imgbigleft d-flex align-items-center justify-content-center"
+                                    style="background-image:url(images/about-7.jpg); box-shadow: 14px 12px #edd5a7;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-md-5 py-5">
+                            <div class="row justify-content-start pb-3">
+                                <div class="col-md-12 heading-section ftco-animate">
+                                    <h2 class="mb-4">BỘ SÁCH TIẾNG ANH
+                                        TĂNG CƯỜNG</h2>
+                                    <p>Bộ sách dành cho giáo viên và học sinh phổ thông, với đầy đủ phần mềm hỗ trợ và
+                                        tài nguyên phong phú.
+
+                                        Liên kết với NXB Express Publishing UK. Đã sử dụng tại hơn 100 quốc gia trên thế
+                                        giới. Biên tập và phát hành
+
+                                        bởi NXB Giáo dục Việt Nam Biên tập tại NXBGDVN : Ban Ngoại ngữ Công ty Dịch vụ
+                                        xuất bản Gia Định.
+
+                                        Đọc kiểm định: Ban Kiểm định NXBGDVN và Ban ngoại ngữ Công ty Dịch vụ Hà Nội đọc
+                                        rà soát.</p>
+                                </div>
+                            </div>
+                        </div>
 
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
-<!-- loader -->
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+    <footer class="ftco-footer ftco-no-pt">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md pt-5">
+                    <div class="ftco-footer-widget pt-md-5 mb-4">
+                        <h2 class="ftco-heading-2">Nhà xuất bản Giáo dục Việt Nam</h2>
+                        <p>Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội</p>
+                        <p>Giấy CNĐKDN số: 0102222393 ngày cấp 20/09/2010, nơi cấp: Sở KHĐT TP.Hà Nội</p>
+                    </div>
+                </div>
+
+                <div class="col-md pt-5">
+                    <div class="ftco-footer-widget pt-md-5 mb-4">
+                        <h2 class="ftco-heading-2">Liên Hệ</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map-marker"></span><span class="text">Tòa nhà VP HEID, ngõ
+                                        12 Láng Hạ, Thành Công, Ba Đình, Hà Nội</span></li>
+                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+84 243 512
+                                            2222</span></a></li>
+                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+                                            class="text">lienhe@sachmem.vn</span></a></li>
+                            </ul>
+                            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            </ul>
+                            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                                <li class="ftco-animate"><a href="#"><span class="fa fa-youtube-play"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright 2020 Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-migrate-3.0.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.animateNumber.min.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
-<script src="js/scrollax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-<script src="js/google-map.js"></script>
-<script src="js/main.js"></script>
 
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <!-- <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+    <!-- <script src="js/google-map.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/main/about.js"></script>
 </body>
+
 </html>
