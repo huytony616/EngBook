@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/jquery.timepicker.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -59,7 +62,7 @@
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"><i class="fa fa-bars" aria-hidden="true"></i></span>            
+                <span class="oi oi-menu"><i class="fa fa-bars" aria-hidden="true"></i></span>
             </button>
             <a class="navbar-brand logo-mobile w-80" href="index.html">
                 <img src="images/logo.jpg" class="logo-header" alt="logo">
@@ -74,9 +77,11 @@
                     <li class="nav-item"><a href="index.html" class="nav-link">Trang Chủ</a></li>
                     <li class="nav-item "><a href="about.html" class="nav-link">Giới Thiệu</a></li>
 
-                    <li class="nav-item dropdown-hover">
-                        <a href="course.html" class="nav-link ">Sản Phẩm
-                        </a>
+                    <li class="nav-item  bar-active active dropdown-hover">                        
+                        <a href="course.html" class="nav-link ">                            
+                            Sản Phẩm
+                        </a>                                                
+                        
                         <div class="drop-box text-left">
                             <div class="drop-item">
                                 <a href="mamnon.html">MẦM NON</a>
@@ -95,7 +100,7 @@
 
                     <li class="nav-item "><a href="student.html" class="nav-link">Học Sinh</a></li>
                     <li class="nav-item"><a href="teacher.html" class="nav-link">Giáo Viên</a></li>
-                    <li class="nav-item bar-active active"><a href="parent.html" class="nav-link">Phụ Huynh</a></li>
+                    <li class="nav-item"><a href="parent.html" class="nav-link">Phụ Huynh</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link">Tin Tức</a></li>
                     <li class="nav-item "><a href="contact.html" class="nav-link">Liên Hệ</a></li>
                 </ul>
@@ -109,14 +114,15 @@
     </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-header-about.jpg');">        
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-header-about.jpg'); ">        
         <div class="container">
             <div class="row no-gutters slider-text align-items-end justify-content-center">
                 <div class="col-md-9 ftco-animate pb-5 text-center">
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Trang Chủ <i
-                                    class="fa fa-chevron-right"></i></a></span> <span>Phụ Huynh <i
-                                class="fa fa-chevron-right"></i></span></p>
-                    <h1 class="mb-0 bread">Phụ Huynh</h1>
+                    <p class="breadcrumbs"><span class="mr-2">
+                        <a href="index.html">Trang Chủ <i class="fa fa-chevron-right"></i></a></span> 
+                        <span>Sản Phẩm <i class="fa fa-chevron-right"></i></span>
+                    </p>
+                    <h1 class="mb-0 bread">TIẾNG ANH MẦM NON</h1>
                 </div>
             </div>
         </div>
@@ -126,53 +132,120 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
+                    <div class="col-lg-12">
+                        <div class="container" style="width: fit-content; margin-bottom: 5%;">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-primary active font-weight-600">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Học Sinh
+                                </label>
+                                <label class="btn btn-dark font-weight-600">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> Giáo Viên
+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
-                        <div class="blog-card">
-                            <div class="meta">
-                                <div class="photo"
-                                    style="background-image: url(http://book.hazomedia.net/wp-content/uploads/2021/03/giao-vien.jpg)">
+                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                            <div class="project-wrap">
+                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                    <span class="price">Sách</span>
+                                </a>
+                                <div class="text p-4">
+                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
                                 </div>
-                            </div>
-                            <div class="description">
-                                <h1>Phụ huynh nói về HEID ENGLISH</h1>
-                                <h6>09/03/2021</h6>
-                                <p>Chúng tôi hài lòng về những giá trị mà HEID ENGLISH mang lại cho thế hệ tương lai của
-                                    chúng tôi …</p>
-                                <p class="read-more">
-                                    <a href="#">Đọc thêm</a>
-                                </p>
                             </div>
                         </div>
-                        <div class="blog-card">
-                            <div class="meta">
-                                <div class="photo"
-                                    style="background-image: url(http://book.hazomedia.net/wp-content/uploads/2021/03/thay-cover-1-600x330.jpg)">
+                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                            <div class="project-wrap">
+                                <a href="#" class="img" style="background-image: url(images/S2-AB.png);">
+                                    <span class="price">Sách</span>
+                                </a>
+                                <div class="text p-4">
+                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
                                 </div>
-                            </div>
-                            <div class="description">
-                                <h1>Chia sẻ của phụ huynh về việc học tiếng Anh của con</h1>
-                                <h6>09/03/2021</h6>
-                                <p>Học tiếng Anh tại nhà như thế nào? Làm thế nào để sử dụng các phương pháp khác nhau ?
-                                    Phụ huynh rất bối rối về cách dạy kèm...</p>
-                                <p class="read-more">
-                                    <a href="#">Đọc thêm</a>
-                                </p>
                             </div>
                         </div>
-                        <div class="blog-card">
-                            <div class="meta">
-                                <div class="photo"
-                                    style="background-image: url(http://book.hazomedia.net/wp-content/uploads/2021/03/anh-1-752-600x400.jpg)">
+                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                            <div class="project-wrap">
+                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                    <span class="price">Sách</span>
+                                </a>
+                                <div class="text p-4">
+                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
                                 </div>
                             </div>
-                            <div class="description">
-                                <h1>Du học sinh cần biết: Điều kiện làm việc của visa F1 Mỹ</h1>
-                                <h6>09/03/2021</h6>
-                                <p>Khi đã có được visa F1 để du học Mỹ, du học sinh được quyền thực tập hoặc đi làm
-                                    thêm. Tuy nhiên các bạn cần phải tìm hiểu...</p>
-                                <p class="read-more">
-                                    <a href="#">Đọc thêm</a>
-                                </p>
+                        </div>
+
+                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                            <div class="project-wrap">
+                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                    <span class="price">Sách</span>
+                                </a>
+                                <div class="text p-4">
+                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                            <div class="project-wrap">
+                                <a href="#" class="img" style="background-image: url(images/S2-AB.png);">
+                                    <span class="price">Sách</span>
+                                </a>
+                                <div class="text p-4">
+                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                            <div class="project-wrap">
+                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                    <span class="price">Sách</span>
+                                </a>
+                                <div class="text p-4">
+                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                            <div class="project-wrap">
+                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                    <span class="price">Sách</span>
+                                </a>
+                                <div class="text p-4">
+                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                            <div class="project-wrap">
+                                <a href="#" class="img" style="background-image: url(images/S2-AB.png);">
+                                    <span class="price">Sách</span>
+                                </a>
+                                <div class="text p-4">
+                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                            <div class="project-wrap">
+                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                    <span class="price">Sách</span>
+                                </a>
+                                <div class="text p-4">
+                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -280,7 +353,6 @@
                         <h2 class="ftco-heading-2">Nhà xuất bản Giáo dục Việt Nam</h2>
                         <p>Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội</p>
                         <p>Giấy CNĐKDN số: 0102222393 ngày cấp 20/09/2010, nơi cấp: Sở KHĐT TP.Hà Nội</p>
-
                     </div>
                 </div>
 
@@ -314,15 +386,13 @@
         </div>
     </footer>
 
-
-
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
                 stroke="#F96D00" />
-        </svg></div>
-
+        </svg>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -336,9 +406,8 @@
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script> -->
     <script src="js/main.js"></script>
 
 </body>
