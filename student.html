@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/jquery.timepicker.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/style/student.css">
 </head>
 
 <body>
@@ -162,7 +164,7 @@
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-9">
                     <div class="col">
                         <div class="block-27">
                             <div class="row">
@@ -186,143 +188,218 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="containerleft" style="width: fit-content; margin-bottom: 5%;">
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-primary active">
-                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Sách Mềm
-                                </label>
-                                <label class="btn btn-dark">
-                                    <input type="radio" name="options" id="option2" autocomplete="off"> Luyện tập
 
+                    <div class="col-lg-8">
+                        <div class="containerleft" style="width: max-content; margin-bottom: 5%;">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn">
+                                    <div id="option1" class="btn show-option option-active" data-show-op="1">Sách Mềm
+                                    </div>
                                 </label>
-                                <label class="btn btn-dark">
-                                    <input type="radio" name="options" id="option3" autocomplete="off"> Kiểm tra đánh
-                                    giá
+                                <label class="btn">
+                                    <div id="option2" class="btn show-option" data-show-op="2"> Luyện tập
+                                    </div>
                                 </label>
+                                <label class="btn">
+                                    <div id="option3" class="btn show-option" data-show-op="3"> Kiểm tra đánh
+                                        giá</div>
+                                </label>
+
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
-                            <div class="project-wrap">
-                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
-                                    <span class="price">Sách</span>
-                                </a>
-                                <div class="text p-4">
-                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
-                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                        <div class="option-item active option_1 w-100" data-option="1">
+                            <div class="row">
+                                <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                                    <div class="project-wrap">
+                                        <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                            <span class="price">Sách</span>
+                                        </a>
+                                        <div class="text p-4">
+                                            <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
-                            <div class="project-wrap">
-                                <a href="#" class="img" style="background-image: url(images/S2-AB.png);">
-                                    <span class="price">Sách</span>
-                                </a>
-                                <div class="text p-4">
-                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
-                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                                    <div class="project-wrap">
+                                        <a href="#" class="img" style="background-image: url(images/S2-AB.png);">
+                                            <span class="price">Sách</span>
+                                        </a>
+                                        <div class="text p-4">
+                                            <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
-                            <div class="project-wrap">
-                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
-                                    <span class="price">Sách</span>
-                                </a>
-                                <div class="text p-4">
-                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
-                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                                    <div class="project-wrap">
+                                        <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                            <span class="price">Sách</span>
+                                        </a>
+                                        <div class="text p-4">
+                                            <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
-                            <div class="project-wrap">
-                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
-                                    <span class="price">Sách</span>
-                                </a>
-                                <div class="text p-4">
-                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
-                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                                    <div class="project-wrap">
+                                        <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                            <span class="price">Sách</span>
+                                        </a>
+                                        <div class="text p-4">
+                                            <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
-                            <div class="project-wrap">
-                                <a href="#" class="img" style="background-image: url(images/S2-AB.png);">
-                                    <span class="price">Sách</span>
-                                </a>
-                                <div class="text p-4">
-                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
-                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                                    <div class="project-wrap">
+                                        <a href="#" class="img" style="background-image: url(images/S2-AB.png);">
+                                            <span class="price">Sách</span>
+                                        </a>
+                                        <div class="text p-4">
+                                            <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
-                            <div class="project-wrap">
-                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
-                                    <span class="price">Sách</span>
-                                </a>
-                                <div class="text p-4">
-                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
-                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                                    <div class="project-wrap">
+                                        <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                            <span class="price">Sách</span>
+                                        </a>
+                                        <div class="text p-4">
+                                            <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
-                            <div class="project-wrap">
-                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
-                                    <span class="price">Sách</span>
-                                </a>
-                                <div class="text p-4">
-                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
-                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                                    <div class="project-wrap">
+                                        <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                            <span class="price">Sách</span>
+                                        </a>
+                                        <div class="text p-4">
+                                            <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                                    <div class="project-wrap">
+                                        <a href="#" class="img" style="background-image: url(images/S2-AB.png);">
+                                            <span class="price">Sách</span>
+                                        </a>
+                                        <div class="text p-4">
+                                            <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex align-items-stretch ftco-animate">
+                                    <div class="project-wrap">
+                                        <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
+                                            <span class="price">Sách</span>
+                                        </a>
+                                        <div class="text p-4">
+                                            <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
+                                            <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row mt-5">
+                                <div class="col">
+                                    <div class="block-27">
+                                        <ul>
+                                            <li><a href="#">&lt;</a></li>
+                                            <li class="active"><span>1</span></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">&gt;</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
-                            <div class="project-wrap">
-                                <a href="#" class="img" style="background-image: url(images/S2-AB.png);">
-                                    <span class="price">Sách</span>
-                                </a>
-                                <div class="text p-4">
-                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
-                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-stretch ftco-animate">
-                            <div class="project-wrap">
-                                <a href="#" class="img" style="background-image: url(images/S6-AB.png);">
-                                    <span class="price">Sách</span>
-                                </a>
-                                <div class="text p-4">
-                                    <h3><a href="course-detail.html">Smiles 1 Special Edition</a></h3>
-                                    <p class="advisor">Tác Giả: <span>Jenny Dooley</span></p>
+                        <div class="option-item option_2 w-100" data-option="2">
+                            <div style="margin-bottom: 100px">
+                                <div class="container">
+
+                                    <div class="row justify-content-center ftco-animate">
+                                        <div class="title">
+                                            <div
+                                                class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                                                <h2 class="fz-1em">ỨNG DỤNG VÀ PHẦN MỀM BỔ TRỢ</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-4 ftco-animate">
+                                            <div class="row my-2">
+                                                <div class="col-6 display-icon-block-4">
+                                                    <img
+                                                        src="https://s.sachmem.vn/public/temp-sm-questions/image/ungdung_phanmem_icon1_tcc3.svg">
+                                                </div>
+                                                <div class="col-6 p-0">
+                                                    <a href="https://hoclieu.sachmem.vn/" style="color: #636363">Hệ
+                                                        thống quản lý học tập</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12 col-md-4 ftco-animate">
+                                            <div class="row my-2">
+                                                <div class="col-6 display-icon-block-4">
+                                                    <img
+                                                        src="https://s.sachmem.vn/public/temp-sm-questions/image/ungdung_phanmem_icon2_tcc3.svg">
+                                                </div>
+                                                <div class="col-6 p-0">
+                                                    <a href="https://tuvung.sachmem.vn" style="color: #636363">
+                                                        <p class="custom-text-block-ungdung-phanmem">
+                                                            Ứng dụng luyện kiến thức ngôn ngữ:
+                                                        </p>
+                                                        <p class="custom-text-block-ungdung-phanmem">Từ vựng</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-md-4 ftco-animate">
+                                            <div class="row my-2">
+                                                <div class="col-6 display-icon-block-4">
+                                                    <img
+                                                        src="https://s.sachmem.vn/public/temp-sm-questions/image/ungdung_phanmem_icon4_tcc3.svg">
+                                                </div>
+                                                <div class="col-6 p-0">
+                                                    <a href="#" style="color: #636363">
+                                                        <p class="custom-text-block-ungdung-phanmem">Ứng dụng</p>
+                                                        <p class="custom-text-block-ungdung-phanmem">
+                                                            luyện từ theo thẻ từ.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col">
-                            <div class="block-27">
-                                <ul>
-                                    <li><a href="#">&lt;</a></li>
-                                    <li class="active"><span>1</span></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">&gt;</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-                <div class="col-lg-4 sidebar">
+
+                <div class="col-lg-3 sidebar">
                     <div class="sidebar-box bg-white ftco-animate">
                         <form action="#" class="search-form">
                             <div class="form-group">
@@ -384,7 +461,7 @@
 
                     <div class="sidebar-box bg-white p-4 ftco-animate">
                         <h3 class="heading-sidebar">Video</h3>
-                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/2rQpOJ7emEU"
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/2rQpOJ7emEU"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -393,38 +470,38 @@
                     <div class="sidebar-box bg-white p-4 ftco-animate">
                         <h3 class="heading-sidebar">Trang Chủ</h3>
                         <iframe
-                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthongtinbogiaoducvadaotao&tabs=timeline&width=450&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-                            width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthongtinbogiaoducvadaotao%2F&tabs=timeline&width=220&height=220&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1259082827813860"
+                            width="100%" height="220" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
-                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                        
                     </div>
                 </div>
             </div>
     </section>
 
-    <footer class="ftco-footer ftco-no-pt">
+    <footer class="ftco-footer ftco-no-pt mt-5">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-md pt-5">
+                <div class="col-md">
                     <div class="ftco-footer-widget pt-md-5 mb-4">
                         <h2 class="ftco-heading-2">Nhà xuất bản Giáo dục Việt Nam</h2>
                         <p>Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội</p>
-                        <p>Giấy CNĐKDN số: 0102222393 ngày cấp 20/09/2010, nơi cấp: Sở KHĐT TP.Hà Nội</p>
-
+                        <p>Giấy CNĐKDN số: 0102222393 ngày cấp 20/09/2010</p>
+                        <p>Nơi cấp: Sở KHĐT TP.Hà Nội</p>
                     </div>
                 </div>
 
-                <div class="col-md pt-5">
+                <div class="col-md">
                     <div class="ftco-footer-widget pt-md-5 mb-4">
                         <h2 class="ftco-heading-2">Liên Hệ</h2>
                         <div class="block-23 mb-3">
                             <ul>
                                 <li><span class="icon fa fa-map-marker"></span><span class="text">Tòa nhà VP HEID, ngõ
                                         12 Láng Hạ, Thành Công, Ba Đình, Hà Nội</span></li>
-                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+84 243 512
-                                            2222</span></a></li>
-                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
-                                            class="text">lienhe@sachmem.vn</span></a></li>
+                                <li><span class="icon fa fa-phone"></span><span class="text">+84 243 512
+                                            2222</span></li>
+                                <li><span class="icon fa fa-paper-plane"></span><span
+                                            class="text">lienhe@sachmem.vn</span></li>
                             </ul>
                             <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                                 <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -443,6 +520,7 @@
             </div>
         </div>
     </footer>
+
 
 
 

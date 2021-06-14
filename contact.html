@@ -22,6 +22,9 @@
 
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style/contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 </head>
 
 <body>
@@ -134,9 +137,11 @@
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <div class="wrapper">
+                        <div class="contact-background"></div>
+
                         <div class="row no-gutters">
-                            <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
-                                <div class="contact-wrap w-100 p-md-5 p-4">
+                            <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch contact-form">
+                                <div class="contact-wrap position-relative w-100 p-md-5 p-4">
                                     <h3 class="mb-4">Thông Tin Liên Hệ</h3>
                                     <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                                         <div class="row">
@@ -179,14 +184,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
-                                <div class="info-wrap bg-primary w-100 p-md-5 p-4">
+                                <div class="info-wrap w-100 p-md-5 p-4">
                                     <h5>Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội</h5>
-                                    <div class="dbox w-100 d-flex align-items-start">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <i class="fa fa-address-card" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="text pl-3">
-                                            <p><span>Người Đại Điện:</span> Ông Lê Thành Anh − Tổng Giám đốc</p>
+                                    <div class="dbox w-100 d-flex align-items-start">                                        
+                                        <div class="img-logo">
+                                            <img src="images/logo.jpg" class="img-fluid" alt="">
                                         </div>
                                     </div>
                                     <div class="dbox w-100 d-flex align-items-start">
@@ -238,29 +240,29 @@
         </div>
     </section>
 
-    <footer class="ftco-footer ftco-no-pt">
+    <footer class="ftco-footer ftco-no-pt mt-5">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-md pt-5">
+                <div class="col-md">
                     <div class="ftco-footer-widget pt-md-5 mb-4">
                         <h2 class="ftco-heading-2">Nhà xuất bản Giáo dục Việt Nam</h2>
                         <p>Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội</p>
-                        <p>Giấy CNĐKDN số: 0102222393 ngày cấp 20/09/2010, nơi cấp: Sở KHĐT TP.Hà Nội</p>
-
+                        <p>Giấy CNĐKDN số: 0102222393 ngày cấp 20/09/2010</p>
+                        <p>Nơi cấp: Sở KHĐT TP.Hà Nội</p>
                     </div>
                 </div>
 
-                <div class="col-md pt-5">
+                <div class="col-md">
                     <div class="ftco-footer-widget pt-md-5 mb-4">
                         <h2 class="ftco-heading-2">Liên Hệ</h2>
                         <div class="block-23 mb-3">
                             <ul>
                                 <li><span class="icon fa fa-map-marker"></span><span class="text">Tòa nhà VP HEID, ngõ
                                         12 Láng Hạ, Thành Công, Ba Đình, Hà Nội</span></li>
-                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+84 243 512
-                                            2222</span></a></li>
-                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
-                                            class="text">lienhe@sachmem.vn</span></a></li>
+                                <li><span class="icon fa fa-phone"></span><span class="text">+84 243 512
+                                            2222</span></li>
+                                <li><span class="icon fa fa-paper-plane"></span><span
+                                            class="text">lienhe@sachmem.vn</span></li>
                             </ul>
                             <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                                 <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
