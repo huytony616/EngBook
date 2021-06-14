@@ -8605,11 +8605,11 @@ h1, h2, h3, h4, h5,
         padding-bottom: 20px;
         margin-right: 0; } }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-        font-size: 0.85em;
+        font-size: 0.9em;
         padding: 0.5rem 0.8em;
         color: #000;        
         opacity: 1 !important;
-        font-weight: bolder;
+        font-weight: 600;
     }
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover, .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:focus {
         /* color: #fff; */
