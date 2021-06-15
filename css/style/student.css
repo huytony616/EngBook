@@ -11,3 +11,8 @@
 .containerleft {
     margin-bottom: 2.5em;
 }
+
+.about-student {
+    background-image: url('../../images/student.jpg');
+    background-repeat: no-repeat;
+}
