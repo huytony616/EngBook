@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="css/jquery.timepicker.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style/contact.css">
+    <link rel="stylesheet" href="css/style/about.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <link rel="stylesheet" href="css/reponsive/home.css">
+    
 </head>
 
 <body>
@@ -53,8 +55,6 @@
         </div>
     </div>
 
-
-
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand logo-lap" href="index.html">
@@ -62,7 +62,7 @@
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"><i class="fa fa-bars" aria-hidden="true"></i></span>            
+                <span class="oi oi-menu"><i class="fa fa-bars" aria-hidden="true"></i></span>
             </button>
             <a class="navbar-brand logo-mobile w-80" href="index.html">
                 <img src="images/logo.jpg" class="logo-header" alt="logo">
@@ -74,8 +74,8 @@
             </div>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Trang Chủ</a></li>
-                    <li class="nav-item dropdown-2">
+                    <li class="nav-item "><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                    <li class="nav-item dropdown-2 bar-active active">
                         <a href="about.html" class="nav-link">Giới Thiệu</a>
                         <ul class="dropdown-hover-2">
                             <li><a href="about.html">Giới thiệu chung</a></li>
@@ -102,7 +102,7 @@
                     <li class="nav-item"><a href="teacher.html" class="nav-link">Giáo Viên</a></li>
                     <li class="nav-item"><a href="parent.html" class="nav-link">Phụ Huynh</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link">Tin Tức</a></li>
-                    <li class="nav-item bar-active active"><a href="contact.html" class="nav-link">Liên Hệ</a></li>
+                    <li class="nav-item "><a href="contact.html" class="nav-link">Liên Hệ</a></li>
                 </ul>
             </div>
             <div class="navbar-brand m-0 p-0 search-on-nav search-box-will-hide">
@@ -112,132 +112,93 @@
             </div>
         </div>
     </nav>
+
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-header-about.jpg');" >        
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg-header-about.jpg'); ">
+
         <div class="container">
             <div class="row no-gutters slider-text align-items-end justify-content-center">
                 <div class="col-md-9 ftco-animate pb-5 text-center">
                     <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Trang Chủ <i
-                                    class="fa fa-chevron-right"></i></a></span> <span>Liên Hệ <i
+                                    class="fa fa-chevron-right"></i></a></span> <span>Giới Thiệu <i
                                 class="fa fa-chevron-right"></i></span></p>
-                    <h1 class="mb-0 bread">Liên Hệ Chúng Tôi</h1>
+                    <h1 class="mb-0 bread">Giới Thiệu</h1>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="ftco-section">
+    <main class="mt-4">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12">
-                    <div class="wrapper">
-                        <div class="contact-background"></div>
-                        
-                        <div class="row no-gutters">
-                            <div class="col-12 text-center">
-                                <div class="dbox w-100 mt-5">                                        
-                                    <div class="img-logo">
-                                        <img src="images/logo.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-6 col-md-6 order-md-last d-flex align-items-stretch contact-form">
-                                <div class="contact-wrap position-relative w-100 p-md-5 p-4">
-                                    <h3 class="mb-4">Thông Tin Liên Hệ</h3>
-                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="label" for="name">Họ Tên</label>
-                                                    <input type="text" class="form-control" name="name" id="name"
-                                                        placeholder="Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="label" for="email">Email</label>
-                                                    <input type="email" class="form-control" name="email" id="email"
-                                                        placeholder="Email">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="label" for="subject">Tiêu Đề</label>
-                                                    <input type="text" class="form-control" name="subject" id="subject"
-                                                        placeholder="Subject">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="label" for="#">Lời Nhắn</label>
-                                                    <textarea name="message" class="form-control" id="message" cols="30"
-                                                        rows="4" placeholder="Message"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="submit" value="Gửi" class="btn btn-primary">
-                                                    <div class="submitting"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
-                                <div class="info-wrap w-100 p-md-5 p-4">
-                                    <h3 class="color-black-2">Công ty Cổ phần Đầu tư và <br> Phát triển Giáo dục Hà Nội</h3>
-                                   
-                                    <div class="dbox w-100 d-flex align-items-start">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-map-marker"></span>
-                                        </div>
-                                        <div class="text pl-3">
-                                            <p><span>Địa Chỉ:</span> Tòa nhà VP HEID, ngõ 12 Láng Hạ, Thành Công, Ba
-                                                Đình, Hà Nội</p>
-                                        </div>
-                                    </div>
-                                    <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-phone"></span>
-                                        </div>
-                                        <div class="text pl-3">
-                                            <p><span>Điện Thoại:</span> <a href="tel://+84243512 2222">(024) 3512
-                                                    2222</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-paper-plane"></span>
-                                        </div>
-                                        <div class="text pl-3">
-                                            <p><span>Email:</span> <a href="mailto:info@heid.vn">info@heid.vn</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="dbox w-100 d-flex align-items-center">
-                                        <div class="icon d-flex align-items-center justify-content-center">
-                                            <span class="fa fa-globe"></span>
-                                        </div>
-                                        <div class="text pl-3">
-                                            <p><span>Website:</span> <a href="#">heid.vn</a></p>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="content-div">
+                        <h1 class="text-center text-uppercase mb-3">Giới thiệu về BỘ SÁCH GIÁO KHOA TIẾNG ANH THEO
+                            CHƯƠNG TRÌNH THÍ ĐIỂM
+                        </h1>
+
+                        <div class="col-8 my-4 mr-0-auto">
+                            <div class="about-img w-100 ">
+                                <img src="images/about-6.jpg" class="img-fluid" alt="">
+                                <!-- <div class="describe w-100 text-center">
+                                    Nhà xuất bản Giáo dục Việt Nam với sứ mệnh
+                                </div> -->                                    
+
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <p>Bộ sách giáo khoa Tiếng Anh theo Chương trình thí điểm thuộc bộ sách của Bộ Giáo dục và Đào
+                            tạo: Bộ Giáo dục và Đào tạo giao Đề án Ngoại ngữ Quốc gia, Nhà Xuất bản Giáo dục Việt Nam,
+                            và Ban biên soạn bộ sách giáo khoa tổ chức, thiết kế và biên soạn.
+                            Được biên soạn với sự hợp tác chặt chẽ về chuyên môn và nghiệp vụ giữa Nhà xuất bản Giáo dục
+                            Việt Nam với nhà xuất bản danh tiếng trên thế giới Macmillan Education, Pearson. Bám sát vào
+                            các nguyên tắc, yêu cầu và nội dung của Chương trình giáo dục phổ thông môn tiếng Anh và
+                            Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam của Bộ Giáo dục và Đào tạo. Bộ sách được
+                            biên soạn theo đường hướng giao tiếp, giúp học sinh bước đầu hình thành và phát
+                            triển năng lực giao tiếp bằng tiếng Anh, thông qua bốn kĩ năng nghe, nói, đọc và viết,
+                            trong đó ưu tiên phát triển hai kĩ năng nghe và nói.</p>
 
-                <div class="col-md-12 mt-5">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.2892414381145!2d105.81451001533205!3d21.02110969341436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab6548d6aaab%3A0x101deafeb41b3016!2zVMOyYSBuaMOgIEhlaWQ!5e0!3m2!1sen!2s!4v1622657625669!5m2!1sen!2s"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <b>Hệ thống hợp phần bổ trợ học liệu điện tử phong phú, cập nhật</b>
+
+                        <p>Điểm nổi bật của bộ sách giáo khoa Tiếng Anh của Nhà xuất bản Giáo dục Việt Nam là hệ thống
+                            hợp phần bổ trợ đi kèm vô cùng đầy đủ, phong phú đáp ứng đầy đủ cho nhu cầu giảng dạy và học
+                            tập bộ môn Tiếng Anh bao gồm Tài liệu kiểm tra đánh giá, Bài giảng điện tử PowerPoint, Video
+                            tiết giảng minh họa, Giáo án mẫu, Vở tập viết, Bộ truyện đọc, Bộ Thẻ từ, Audio CD…</p>
+
+                        <p>Đặc biệt, Sách Mềm, phần mềm hỗ trợ giảng dạy và kho học liệu được đánh giá là công cụ hỗ trợ
+                            “không thể thiếu” của cộng đồng giáo viên Tiếng Anh toàn quốc từ bao nhiêu năm nay tại trang
+                            web sachmem.vn.</p>
+
+                        <p>Sách Mềm hiện đang có hơn 1 triệu tài khoản người dùng, cấp miễn phí cho giáo viên Tiếng Anh
+                            trên toàn quốc. Với hệ thống gần 300 đầu sách giáo khoa, sách tham khảo, học liệu điện tử
+                            các môn học; 30.000 câu hỏi kiểm tra đánh giá thường xuyên và định kỳ được chuẩn hóa theo
+                            định hướng phát triển năng lực, bám sát nội dung chương trình giáo dục phổ thông mới.
+                        </p>
+
+                        <p>Với kho tài nguyên học liệu điện tử sẵn có như trên, Sách Mềm cho phép giáo viên có thể tạo
+                            lớp học, quản lý lớp học, tùy biến khóa học chuẩn theo sách, tạo câu hỏi, tạo bài tập,
+                            giao bài tập, tạo bài kiểm tra, giao bài kiểm tra, chia sẻ dữ liệu cá nhân, chấm bài trắc
+                            nghiệm tự động, ứng dụng trí tuệ nhân tạo hỗ trợ giáo viên chấm bài trực tuyến, quản lí kết
+                            quả học tập, gửi thông báo, nhắn tin trao đổi (giữa giáo viên, học sinh, phụ huynh).
+                        </p>
+                        
+                        <b>Hệ thống hỗ trợ triển khai sử dụng sách đầy đủ và đồng bộ</b>
+
+                        <p>Được biết, trong một cuộc khảo sát gần đây trên Cộng đồng giáo viên Sách Mềm, Sách Giáo Khoa
+                            Tiếng Anh của Tổng chủ biên GS.TS Hoàng Văn Vân được đánh giá rất cao (82% giáo viên tham
+                            gia khảo sát đánh giá ở khung điểm từ 8-10/10 và đều hài lòng với chất lượng của bộ sách).
+                        </p>
+
+                        <p>Với kinh nghiệm bề dày hơn 60 năm tổ chức biên soạn sách giáo khoa, Nhà xuất bản Giáo dục
+                            Việt Nam cam kết sẽ đồng hành cùng các thầy cô, các em học sinh và phụ huynh trong quá trình
+                            triển khai và sử dụng sách giáo khoa. Hệ thống hỗ trợ triển khai sử dụng sách giáo khoa
+                            Tiếng Anh của Nhà xuất bản Giáo dục Việt Nam bao gồm tập huấn giáo viên, các kênh tư vấn hỗ
+                            trợ được triển khai đầy đủ và đồng bộ trên tất cả các nền tảng.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <footer class="ftco-footer ftco-no-pt">
         <div class="container">
@@ -259,15 +220,17 @@
                                 <li><span class="icon fa fa-map-marker"></span><span class="text">Tòa nhà VP HEID, ngõ
                                         12 Láng Hạ, Thành Công, Ba Đình, Hà Nội</span></li>
                                 <li><span class="icon fa fa-phone"></span><span class="text">+84 243 512
-                                            2222</span></li>
+                                        2222</span></li>
                                 <li><span class="icon fa fa-paper-plane"></span><span
-                                            class="text">lienhe@sachmem.vn</span></li>
+                                        class="text">lienhe@sachmem.vn</span></li>
                             </ul>
                             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mb-0">
-                                <li class="ftco-animate mb-0"><a href="#" class="m-0"><span class="fa fa-facebook"></span></a></li>
+                                <li class="ftco-animate mb-0"><a href="#" class="m-0"><span
+                                            class="fa fa-facebook"></span></a></li>
                             </ul>
                             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mb-0">
-                                <li class="ftco-animate mb-0"><a href="#" class="m-0"><span class="fa fa-youtube-play"></span></a></li>
+                                <li class="ftco-animate mb-0"><a href="#" class="m-0"><span
+                                            class="fa fa-youtube-play"></span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -307,7 +270,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
     <!-- <script src="js/google-map.js"></script> -->
     <script src="js/main.js"></script>
-
+    <script src="js/main/about.js"></script>
 </body>
 
 </html>

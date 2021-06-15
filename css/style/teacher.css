@@ -1,15 +1,13 @@
 .img-cirle {
     border-radius: 100px;
-    width: 70%;
+    width: 80%;
     background: #ffffff !important;
     padding: 2em;
-    border: 1px solid #4343430d;
     margin: 0 auto;
     margin-bottom: 1em;
 }
 
 .project-wrap {
-    background: none;
     box-shadow: none;
     text-align: center;
 }
@@ -19,7 +17,7 @@
 }
 
 .project-wrap .text h3 a {
-    color: #000000c9;
+    color: #2A629F;
     font-size: 1.1em;
     font-weight: 600;
 }
@@ -35,4 +33,10 @@
 .about-teacher {
     background-image: url('../../images/bg-teacher.jpg');
     background-repeat: no-repeat;
+}
+
+
+.img-cirle.icon-faw i {
+    font-size: 9em;
+    color: #f60000;
 }

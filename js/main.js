@@ -280,7 +280,7 @@ $('#video-carousel').owlCarousel({
 
 $('.show-option').click(function (e) { 
     e.preventDefault();
-    var active = $(this).hasClass('control-active');
+    var active = $(this).hasClass('option-active');
 
     if (!active) {        
         var num = $(this).attr('data-show-op');
