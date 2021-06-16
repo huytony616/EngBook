@@ -13013,9 +13013,9 @@ h5,
     margin-bottom: 30px;
     width: 100%;
     background: #fff;
-    -webkit-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
-    -moz-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
-    box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.22);
 }
 
 .project-wrap .img {
@@ -13024,12 +13024,13 @@ h5,
     height: 270px;
     position: relative;
     z-index: 1;
+    background-size: contain;
 }
 
 .project-wrap .img .price {
     position: absolute;
     bottom: -8px;
-    left: 20px;
+    left: 54px;
     display: inline-block;
     background: #4986fc;
     color: #fff;
